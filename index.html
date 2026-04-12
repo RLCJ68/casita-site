@@ -855,6 +855,386 @@
   </div>
 </section>
 
+
+<!-- ══ SITE PLAN ═════════════════════════════════════════════════════════════ -->
+<section>
+  <h2>The Lot — Satellite View &amp; Site Plan</h2>
+  <p>265 Avenue G sits on a 23,692 sq ft lot on Vaca Key — large by Keys standards. Below is the live satellite view followed by a proposed site layout showing how the casita, pool, and covered walkway could be arranged.</p>
+
+  <!-- Google Maps Satellite Embed -->
+  <div style="border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.15); margin-bottom:28px;">
+    <iframe
+      src="https://maps.google.com/maps?q=265+Avenue+G,+Marathon,+FL+33050&t=k&z=19&ie=UTF8&iwloc=&output=embed"
+      width="100%" height="400" frameborder="0" style="border:0; display:block;"
+      allowfullscreen loading="lazy" title="265 Avenue G Marathon FL — Satellite View">
+    </iframe>
+  </div>
+
+  <!-- SVG Site Plan -->
+  <h3>Proposed Site Layout</h3>
+  <p style="font-size:0.9rem; color:var(--muted); margin-bottom:16px;">Illustrative only — based on 130 ft × 182 ft lot estimate. Commission a boundary survey before design.</p>
+
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.09); padding:8px;">
+  <svg viewBox="0 0 420 530" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+    <defs>
+      <pattern id="grass" patternUnits="userSpaceOnUse" width="8" height="8">
+        <rect width="8" height="8" fill="#c8e0a0"/>
+        <line x1="0" y1="4" x2="8" y2="4" stroke="#b8d090" stroke-width="0.3"/>
+        <line x1="4" y1="0" x2="4" y2="8" stroke="#b8d090" stroke-width="0.3"/>
+      </pattern>
+      <pattern id="concrete" patternUnits="userSpaceOnUse" width="12" height="12">
+        <rect width="12" height="12" fill="#d8d0c0"/>
+        <rect width="12" height="12" fill="none" stroke="#c8c0b0" stroke-width="0.4"/>
+      </pattern>
+    </defs>
+
+    <!-- Street / Avenue G -->
+    <rect x="0" y="420" width="420" height="60" fill="#b0a890"/>
+    <line x1="0" y1="450" x2="420" y2="450" stroke="white" stroke-width="1.5" stroke-dasharray="20,12"/>
+    <text x="210" y="476" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="600" fill="#f5f0e8">AVENUE G</text>
+    <text x="210" y="492" text-anchor="middle" font-size="10" font-family="system-ui" fill="#e0d8c8">(south / street frontage)</text>
+
+    <!-- Lot fill -->
+    <rect x="80" y="50" width="260" height="370" fill="url(#grass)"/>
+
+    <!-- Lot boundary -->
+    <rect x="80" y="50" width="260" height="370" fill="none" stroke="#888" stroke-width="2.5"/>
+
+    <!-- Setback lines (dashed) -->
+    <!-- Front setback 25ft = 50px from lot bottom (y=420): y=420-50=370 -->
+    <line x1="80" y1="370" x2="340" y2="370" stroke="#cc8800" stroke-width="1" stroke-dasharray="5,4" opacity="0.7"/>
+    <text x="344" y="373" font-size="7.5" font-family="system-ui" fill="#cc8800">25 ft</text>
+    <!-- Rear setback 10ft = 20px from lot top (y=50): y=70 -->
+    <line x1="80" y1="70" x2="340" y2="70" stroke="#cc8800" stroke-width="1" stroke-dasharray="5,4" opacity="0.7"/>
+    <text x="344" y="73" font-size="7.5" font-family="system-ui" fill="#cc8800">10 ft</text>
+    <!-- Side setbacks 10ft = 20px -->
+    <line x1="100" y1="50" x2="100" y2="420" stroke="#cc8800" stroke-width="0.8" stroke-dasharray="5,4" opacity="0.5"/>
+    <line x1="320" y1="50" x2="320" y2="420" stroke="#cc8800" stroke-width="0.8" stroke-dasharray="5,4" opacity="0.5"/>
+
+    <!-- Driveway (right side) -->
+    <rect x="296" y="370" width="30" height="52" fill="url(#concrete)"/>
+    <text x="311" y="400" text-anchor="middle" font-size="7" font-family="system-ui" fill="#666" transform="rotate(-90,311,400)">DRIVEWAY</text>
+
+    <!-- ── MAIN HOUSE ── centered, near front setback -->
+    <!-- x=170 to x=250 (80px = 40ft), y=270 to y=370 (100px = 50ft) -->
+    <rect x="170" y="270" width="80" height="100" fill="#f5f0e8" stroke="#666" stroke-width="2"/>
+    <!-- Roof line -->
+    <rect x="170" y="270" width="80" height="100" fill="none" stroke="#888" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <!-- Front porch -->
+    <rect x="162" y="360" width="96" height="12" fill="#e8e0d0" stroke="#aaa" stroke-width="1"/>
+    <!-- House label -->
+    <text x="210" y="310" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">MAIN HOUSE</text>
+    <text x="210" y="323" text-anchor="middle" font-size="8" font-family="system-ui" fill="#555">2,005 sq ft</text>
+    <text x="210" y="335" text-anchor="middle" font-size="7.5" font-family="system-ui" fill="#777">3BR / 3BA / 1990</text>
+    <!-- Garage door -->
+    <rect x="248" y="290" width="20" height="15" fill="#d0c8b8" stroke="#999" stroke-width="0.8"/>
+
+    <!-- ── POOL ── between house and casita -->
+    <!-- pool deck: x=175 to x=255, y=205 to y=255 -->
+    <rect x="172" y="202" width="86" height="58" rx="4" fill="#d0e8c0" stroke="#aaa" stroke-width="1"/>
+    <!-- pool water -->
+    <rect x="180" y="210" width="70" height="42" rx="6" fill="#5ab4d4" opacity="0.85"/>
+    <text x="215" y="235" text-anchor="middle" font-size="8" font-family="system-ui" fill="white" font-weight="600">POOL</text>
+
+    <!-- ── COVERED WALKWAY ── casita → pool → house -->
+    <!-- Walkway north segment: casita (bottom y=138) to pool (top y=202) -->
+    <rect x="206" y="138" width="14" height="64" fill="#e8e0c8" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <!-- Walkway south segment: pool (bottom y=260) to house (top y=270) -->
+    <rect x="206" y="260" width="14" height="10" fill="#e8e0c8" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3,2"/>
+    <!-- Walkway labels -->
+    <text x="197" y="175" text-anchor="end" font-size="7" font-family="system-ui" fill="#888" transform="rotate(-90,197,175)">covered walk</text>
+
+    <!-- ── PROPOSED CASITA ── rear, centered -->
+    <!-- x=185 to x=235 (50px = 25ft), y=98 to y=138 (40px = 20ft) -->
+    <rect x="178" y="78" width="64" height="60" rx="2" fill="#ffd080" stroke="#d4603a" stroke-width="2.5"/>
+    <!-- Rooftop indicator -->
+    <rect x="178" y="78" width="64" height="60" fill="none" stroke="#d4603a" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
+    <!-- Casita label -->
+    <text x="210" y="101" text-anchor="middle" font-size="8.5" font-family="system-ui" font-weight="700" fill="#8B3300">CASITA</text>
+    <text x="210" y="113" text-anchor="middle" font-size="7.5" font-family="system-ui" fill="#8B3300">1,000 sq ft</text>
+    <text x="210" y="124" text-anchor="middle" font-size="7" font-family="system-ui" fill="#8B3300">2 stories + roof deck</text>
+    <!-- Rooftop deck star -->
+    <text x="234" y="85" font-size="10" fill="#d4603a">★</text>
+
+    <!-- ── TREES ── scattered around lot -->
+    <!-- Front yard trees -->
+    <circle cx="108" cy="345" r="12" fill="#4a8820" opacity="0.7"/>
+    <circle cx="124" cy="345" r="8" fill="#5a9830" opacity="0.6"/>
+    <circle cx="320" cy="330" r="14" fill="#4a8820" opacity="0.7"/>
+    <circle cx="308" cy="350" r="9" fill="#5a9830" opacity="0.6"/>
+    <!-- Side yard trees -->
+    <circle cx="100" cy="200" r="11" fill="#4a8820" opacity="0.65"/>
+    <circle cx="92" cy="175" r="9" fill="#3a7810" opacity="0.7"/>
+    <circle cx="330" cy="180" r="13" fill="#4a8820" opacity="0.65"/>
+    <circle cx="325" cy="210" r="8" fill="#5a9830" opacity="0.6"/>
+    <!-- Rear corner trees -->
+    <circle cx="100" cy="90" r="10" fill="#4a8820" opacity="0.65"/>
+    <circle cx="330" cy="95" r="11" fill="#4a8820" opacity="0.65"/>
+    <!-- Palm indicators -->
+    <circle cx="160" cy="175" r="5" fill="#3a7020" opacity="0.8"/>
+    <circle cx="265" cy="170" r="5" fill="#3a7020" opacity="0.8"/>
+
+    <!-- ── OUTDOOR SHOWER ── near casita -->
+    <rect x="248" y="82" width="14" height="10" rx="2" fill="#a0c8d8" stroke="#888" stroke-width="0.8"/>
+    <text x="255" y="104" text-anchor="middle" font-size="6.5" font-family="system-ui" fill="#555">shower</text>
+
+    <!-- ── COMPASS ROSE ── top right -->
+    <g transform="translate(365,75)">
+      <circle cx="0" cy="0" r="18" fill="white" stroke="#aaa" stroke-width="1"/>
+      <polygon points="0,-14 3,-4 0,-7 -3,-4" fill="#333"/>
+      <polygon points="0,14 3,4 0,7 -3,4" fill="#ccc"/>
+      <polygon points="-14,0 -4,3 -7,0 -4,-3" fill="#ccc"/>
+      <polygon points="14,0 4,3 7,0 4,-3" fill="#ccc"/>
+      <text x="0" y="-17" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#333">N</text>
+    </g>
+
+    <!-- ── SCALE BAR ── bottom left -->
+    <g transform="translate(85,503)">
+      <rect x="0" y="0" width="50" height="5" fill="#555"/>
+      <rect x="50" y="0" width="50" height="5" fill="white" stroke="#555" stroke-width="0.5"/>
+      <text x="0" y="15" font-size="8" font-family="system-ui" fill="#555">0</text>
+      <text x="46" y="15" font-size="8" font-family="system-ui" fill="#555">25 ft</text>
+      <text x="96" y="15" font-size="8" font-family="system-ui" fill="#555">50 ft</text>
+    </g>
+
+    <!-- ── LEGEND ── bottom right -->
+    <g transform="translate(240,495)">
+      <rect x="0" y="0" width="10" height="10" fill="#ffd080" stroke="#d4603a" stroke-width="1.5"/>
+      <text x="14" y="9" font-size="8.5" font-family="system-ui" fill="#333">Proposed Casita</text>
+      <rect x="0" y="16" width="10" height="10" fill="#f5f0e8" stroke="#666" stroke-width="1.5"/>
+      <text x="14" y="25" font-size="8.5" font-family="system-ui" fill="#333">Main House</text>
+      <rect x="0" y="32" width="10" height="10" fill="#e8e0c8" stroke="#bbb" stroke-width="0.8" stroke-dasharray="2,1"/>
+      <text x="14" y="41" font-size="8.5" font-family="system-ui" fill="#333">Covered Walkway</text>
+      <line x1="0" y1="52" x2="10" y2="52" stroke="#cc8800" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="14" y="56" font-size="8.5" font-family="system-ui" fill="#333">Setback Lines</text>
+    </g>
+
+    <!-- Title -->
+    <text x="210" y="30" text-anchor="middle" font-size="11" font-family="system-ui" font-weight="600" fill="#1d5c5c">265 AVENUE G — PROPOSED SITE PLAN</text>
+    <text x="210" y="42" text-anchor="middle" font-size="8.5" font-family="system-ui" fill="#888">23,692 sq ft · illustrative · not to surveyed scale</text>
+  </svg>
+  </div>
+</section>
+
+<!-- ══ WHAT IT COULD LOOK LIKE ═══════════════════════════════════════════════ -->
+<section>
+  <h2>What It Could Look Like</h2>
+  <p>Based on <strong>Concept D (Garage + Loft)</strong> — the recommended configuration. Three levels: open garage below, two conditioned living floors above, rooftop observation deck on top.</p>
+
+  <!-- Exterior Elevation SVG -->
+  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.09); margin-bottom:28px;">
+  <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+    <defs>
+      <linearGradient id="sky-ext" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#4a9aba"/>
+        <stop offset="60%" stop-color="#87ceeb"/>
+        <stop offset="100%" stop-color="#c8e8f5"/>
+      </linearGradient>
+      <linearGradient id="water-ext" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#2a7fa8"/>
+        <stop offset="100%" stop-color="#5aaac8"/>
+      </linearGradient>
+      <linearGradient id="wall-ext" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#f8f4ec"/>
+        <stop offset="100%" stop-color="#ede8e0"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Sky -->
+    <rect width="600" height="320" fill="url(#sky-ext)"/>
+
+    <!-- Distant water / bay -->
+    <rect x="0" y="248" width="600" height="72" fill="url(#water-ext)" opacity="0.4"/>
+
+    <!-- Sun low in sky -->
+    <circle cx="520" cy="60" r="30" fill="#f5c842" opacity="0.7"/>
+    <circle cx="520" cy="60" r="22" fill="#f8d860" opacity="0.8"/>
+
+    <!-- Clouds -->
+    <ellipse cx="120" cy="45" rx="50" ry="16" fill="white" opacity="0.6"/>
+    <ellipse cx="155" cy="40" rx="32" ry="12" fill="white" opacity="0.6"/>
+    <ellipse cx="350" cy="70" rx="40" ry="13" fill="white" opacity="0.5"/>
+
+    <!-- Ground / vegetation -->
+    <rect x="0" y="258" width="600" height="62" fill="#8ab840"/>
+    <!-- Lawn texture -->
+    <rect x="0" y="258" width="600" height="8" fill="#9ac850" opacity="0.6"/>
+
+    <!-- Palm trees (background) -->
+    <!-- Left palm -->
+    <line x1="95" y1="258" x2="85" y2="160" stroke="#7a5020" stroke-width="4"/>
+    <ellipse cx="82" cy="158" rx="26" ry="14" fill="#4a8820" opacity="0.85"/>
+    <ellipse cx="72" cy="163" rx="20" ry="10" fill="#3a7010" opacity="0.8"/>
+    <ellipse cx="94" cy="155" rx="22" ry="10" fill="#5a9830" opacity="0.75"/>
+    <!-- Right palm -->
+    <line x1="510" y1="258" x2="522" y2="158" stroke="#7a5020" stroke-width="4"/>
+    <ellipse cx="525" cy="155" rx="28" ry="14" fill="#4a8820" opacity="0.85"/>
+    <ellipse cx="514" cy="160" rx="20" ry="10" fill="#3a7010" opacity="0.8"/>
+    <ellipse cx="538" cy="152" rx="22" ry="11" fill="#5a9830" opacity="0.75"/>
+
+    <!-- ── BUILDING STRUCTURE ── -->
+
+    <!-- Foundation / concrete pilings (6) -->
+    <rect x="168" y="225" width="12" height="34" fill="#9090a0" rx="2"/>
+    <rect x="215" y="225" width="12" height="34" fill="#9090a0" rx="2"/>
+    <rect x="262" y="225" width="12" height="34" fill="#9090a0" rx="2"/>
+    <rect x="326" y="225" width="12" height="34" fill="#9090a0" rx="2"/>
+    <rect x="373" y="225" width="12" height="34" fill="#9090a0" rx="2"/>
+    <rect x="420" y="225" width="12" height="34" fill="#9090a0" rx="2"/>
+
+    <!-- Ground level slab -->
+    <rect x="162" y="220" width="278" height="8" fill="#a8a8b8" rx="2"/>
+
+    <!-- ── GROUND FLOOR: Open garage ── -->
+    <rect x="162" y="165" width="278" height="57" fill="#e0d8c8" opacity="0.5"/>
+    <!-- Garage doors (3 large bays) -->
+    <rect x="170" y="168" width="72" height="50" rx="2" fill="#c8c0b0" stroke="#aaa" stroke-width="1"/>
+    <rect x="254" y="168" width="72" height="50" rx="2" fill="#c8c0b0" stroke="#aaa" stroke-width="1"/>
+    <rect x="338" y="168" width="72" height="50" rx="2" fill="#c8c0b0" stroke="#aaa" stroke-width="1"/>
+    <!-- Garage door panels -->
+    <line x1="170" y1="182" x2="242" y2="182" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="170" y1="196" x2="242" y2="196" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="170" y1="210" x2="242" y2="210" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="254" y1="182" x2="326" y2="182" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="254" y1="196" x2="326" y2="196" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="254" y1="210" x2="326" y2="210" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="338" y1="182" x2="410" y2="182" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="338" y1="196" x2="410" y2="196" stroke="#bbb" stroke-width="0.8"/>
+    <line x1="338" y1="210" x2="410" y2="210" stroke="#bbb" stroke-width="0.8"/>
+    <!-- Ground level label -->
+    <text x="301" y="150" text-anchor="middle" font-size="9" font-family="system-ui" fill="#666">GARAGE · WORKSHOP · GEAR · OUTDOOR SHOWER</text>
+    <rect x="430" y="172" width="14" height="20" rx="2" fill="#a8c8d8" stroke="#888" stroke-width="0.8"/>
+    <text x="437" y="203" text-anchor="middle" font-size="7" font-family="system-ui" fill="#555">shower</text>
+
+    <!-- ── FLOOR LINE 1 ── -->
+    <rect x="158" y="162" width="286" height="6" fill="#c8c0b0" rx="1"/>
+
+    <!-- ── FIRST FLOOR: Living/Kitchen/Dining ── -->
+    <rect x="162" y="110" width="278" height="53" fill="url(#wall-ext)"/>
+    <!-- Porch / covered deck extending left -->
+    <rect x="140" y="113" width="24" height="50" fill="#f0ece4" opacity="0.7"/>
+    <rect x="136" y="110" width="28" height="5" fill="#c8c0b0" rx="1"/>
+    <!-- Windows - large impact glass -->
+    <rect x="178" y="118" width="44" height="36" fill="#a8d0e8" opacity="0.8" stroke="#ddd" stroke-width="1"/>
+    <line x1="200" y1="118" x2="200" y2="154" stroke="#ddd" stroke-width="0.8"/>
+    <rect x="234" y="118" width="44" height="36" fill="#a8d0e8" opacity="0.8" stroke="#ddd" stroke-width="1"/>
+    <line x1="256" y1="118" x2="256" y2="154" stroke="#ddd" stroke-width="0.8"/>
+    <!-- Door -->
+    <rect x="290" y="124" width="24" height="38" fill="#b07040" stroke="#888" stroke-width="1" rx="1"/>
+    <circle cx="311" cy="145" r="2" fill="#888"/>
+    <!-- Right windows -->
+    <rect x="334" y="118" width="44" height="36" fill="#a8d0e8" opacity="0.8" stroke="#ddd" stroke-width="1"/>
+    <line x1="356" y1="118" x2="356" y2="154" stroke="#ddd" stroke-width="0.8"/>
+
+    <!-- ── FLOOR LINE 2 ── -->
+    <rect x="158" y="107" width="286" height="5" fill="#c8c0b0" rx="1"/>
+
+    <!-- ── SECOND FLOOR: Bedrooms + Balcony ── -->
+    <rect x="162" y="60" width="278" height="48" fill="url(#wall-ext)"/>
+    <!-- Balcony extending both sides -->
+    <rect x="140" y="63" width="24" height="45" fill="#f0ece4" opacity="0.6"/>
+    <rect x="440" y="63" width="22" height="45" fill="#f0ece4" opacity="0.6"/>
+    <!-- Balcony railings -->
+    <rect x="136" y="60" width="32" height="4" fill="#c8c0b0" rx="1"/>
+    <rect x="438" y="60" width="28" height="4" fill="#c8c0b0" rx="1"/>
+    <!-- Balcony railing posts -->
+    <line x1="138" y1="60" x2="138" y2="48" stroke="#999" stroke-width="1.5"/>
+    <line x1="152" y1="60" x2="152" y2="48" stroke="#999" stroke-width="1.5"/>
+    <line x1="166" y1="60" x2="166" y2="48" stroke="#999" stroke-width="1.5"/>
+    <line x1="136" y1="48" x2="168" y2="48" stroke="#999" stroke-width="1.2"/>
+    <line x1="440" y1="60" x2="440" y2="48" stroke="#999" stroke-width="1.5"/>
+    <line x1="454" y1="60" x2="454" y2="48" stroke="#999" stroke-width="1.5"/>
+    <line x1="466" y1="60" x2="466" y2="48" stroke="#999" stroke-width="1.5"/>
+    <line x1="438" y1="48" x2="468" y2="48" stroke="#999" stroke-width="1.2"/>
+    <!-- Second floor windows -->
+    <rect x="185" y="68" width="36" height="28" fill="#a8d0e8" opacity="0.8" stroke="#ddd" stroke-width="1"/>
+    <line x1="203" y1="68" x2="203" y2="96" stroke="#ddd" stroke-width="0.8"/>
+    <rect x="242" y="68" width="36" height="28" fill="#a8d0e8" opacity="0.8" stroke="#ddd" stroke-width="1"/>
+    <line x1="260" y1="68" x2="260" y2="96" stroke="#ddd" stroke-width="0.8"/>
+    <rect x="340" y="68" width="36" height="28" fill="#a8d0e8" opacity="0.8" stroke="#ddd" stroke-width="1"/>
+    <line x1="358" y1="68" x2="358" y2="96" stroke="#ddd" stroke-width="0.8"/>
+    <!-- Clerestory strip -->
+    <rect x="162" y="62" width="278" height="7" fill="#c0d8e8" opacity="0.5"/>
+
+    <!-- ── ROOFTOP DECK ── -->
+    <!-- Deck surface (flat roof / hip) -->
+    <rect x="155" y="52" width="292" height="10" fill="#b8804a" rx="2"/>
+    <!-- Rooftop deck surface -->
+    <rect x="162" y="30" width="278" height="23" fill="#c89050" opacity="0.3"/>
+    <!-- Rooftop railing posts -->
+    <line x1="168" y1="52" x2="168" y2="26" stroke="#666" stroke-width="1.5"/>
+    <line x1="210" y1="52" x2="210" y2="26" stroke="#666" stroke-width="1.5"/>
+    <line x1="252" y1="52" x2="252" y2="26" stroke="#666" stroke-width="1.5"/>
+    <line x1="294" y1="52" x2="294" y2="26" stroke="#666" stroke-width="1.5"/>
+    <line x1="336" y1="52" x2="336" y2="26" stroke="#666" stroke-width="1.5"/>
+    <line x1="378" y1="52" x2="378" y2="26" stroke="#666" stroke-width="1.5"/>
+    <line x1="432" y1="52" x2="432" y2="26" stroke="#666" stroke-width="1.5"/>
+    <!-- Cable railing lines -->
+    <line x1="166" y1="30" x2="434" y2="30" stroke="#888" stroke-width="1"/>
+    <line x1="166" y1="35" x2="434" y2="35" stroke="#888" stroke-width="1"/>
+    <line x1="166" y1="40" x2="434" y2="40" stroke="#888" stroke-width="1"/>
+    <line x1="166" y1="45" x2="434" y2="45" stroke="#888" stroke-width="1"/>
+    <!-- Rooftop chairs (silhouette) -->
+    <rect x="270" y="34" width="14" height="12" rx="2" fill="#888" opacity="0.5"/>
+    <rect x="292" y="34" width="14" height="12" rx="2" fill="#888" opacity="0.5"/>
+    <rect x="314" y="34" width="14" height="12" rx="2" fill="#888" opacity="0.5"/>
+    <rect x="278" y="28" width="30" height="4" rx="1" fill="#a0601a" opacity="0.6"/>
+
+    <!-- External rooftop stair (right side) -->
+    <rect x="444" y="52" width="18" height="8" rx="1" fill="#c08848"/>
+    <rect x="452" y="60" width="18" height="8" rx="1" fill="#b87838"/>
+    <rect x="452" y="68" width="18" height="8" rx="1" fill="#a87030"/>
+    <rect x="452" y="76" width="18" height="8" rx="1" fill="#988028"/>
+    <rect x="452" y="84" width="18" height="8" rx="1" fill="#906820"/>
+    <!-- Stair handrail -->
+    <line x1="444" y1="52" x2="470" y2="92" stroke="#888" stroke-width="1.5"/>
+
+    <!-- Standing seam metal accent on roof parapet -->
+    <rect x="155" y="52" width="292" height="3" fill="#9a8060"/>
+
+    <!-- Height labels -->
+    <text x="147" y="237" text-anchor="end" font-size="8" font-family="system-ui" fill="#888">grade</text>
+    <text x="147" y="192" text-anchor="end" font-size="8" font-family="system-ui" fill="#666">~10 ft</text>
+    <text x="147" y="140" text-anchor="end" font-size="8" font-family="system-ui" fill="#444">~20 ft</text>
+    <text x="147" y="88" text-anchor="end" font-size="8" font-family="system-ui" fill="#333">~30 ft</text>
+    <text x="147" y="40" text-anchor="end" font-size="8" font-family="system-ui" fill="#d4603a" font-weight="600">~32 ft</text>
+    <!-- Height tick lines -->
+    <line x1="150" y1="235" x2="162" y2="235" stroke="#aaa" stroke-width="0.8"/>
+    <line x1="150" y1="192" x2="162" y2="192" stroke="#aaa" stroke-width="0.8"/>
+    <line x1="150" y1="140" x2="162" y2="140" stroke="#aaa" stroke-width="0.8"/>
+    <line x1="150" y1="88" x2="162" y2="88" stroke="#aaa" stroke-width="0.8"/>
+    <line x1="150" y1="38" x2="162" y2="38" stroke="#d4603a" stroke-width="1"/>
+
+    <!-- Level labels right side -->
+    <text x="476" y="205" font-size="9" font-family="system-ui" fill="#7a5020" font-weight="600">GARAGE /</text>
+    <text x="476" y="216" font-size="9" font-family="system-ui" fill="#7a5020">WORKSHOP</text>
+    <text x="476" y="143" font-size="9" font-family="system-ui" fill="#333" font-weight="600">LIVING /</text>
+    <text x="476" y="154" font-size="9" font-family="system-ui" fill="#333">KITCHEN</text>
+    <text x="476" y="88" font-size="9" font-family="system-ui" fill="#333" font-weight="600">BEDROOMS</text>
+    <text x="476" y="40" font-size="9" font-family="system-ui" fill="#d4603a" font-weight="700">ROOFTOP ★</text>
+
+    <!-- Title / caption -->
+    <text x="301" y="305" text-anchor="middle" font-size="11" font-family="Georgia,serif" fill="#1d5c5c" font-style="italic">Concept D — Garage + Loft — Front Elevation · Keys-native · best $/sq ft</text>
+    <text x="301" y="318" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">Illustrative rendering · actual appearance subject to architect and site conditions</text>
+  </svg>
+  </div>
+
+  <!-- Rooftop Deck Photo -->
+  <h3>The View From Up There</h3>
+  <p>At 28–32 ft above grade in Marathon, the rooftop deck clears the tree canopy and neighboring rooflines. Views toward Florida Bay and the Atlantic — unobstructed in all directions.</p>
+  <div style="border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.15); margin-top:16px;">
+    <img
+      src="https://images.pexels.com/photos/29886655/pexels-photo-29886655.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      alt="Rooftop deck with scenic outdoor view"
+      style="width:100%; display:block; max-height:480px; object-fit:cover;"
+      loading="lazy"/>
+  </div>
+  <p style="font-size:0.8rem; color:var(--muted); margin-top:8px; text-align:center;">
+    Illustrative rooftop deck concept. Photo: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> (free license).
+    Actual deck will feature Keys views, cable railing, and standing-seam metal parapet.
+  </p>
+</section>
+
 <!-- ══ SITE PLACEMENT ════════════════════════════════════════════════════════ -->
 <section>
   <h2>Site Placement</h2>
