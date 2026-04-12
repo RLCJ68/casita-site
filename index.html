@@ -980,6 +980,12 @@
 
   <script>
   var tierData = {
+    ray: {
+      title: 'RaytoldLF — Neighbor Estimate ($250–$300/sq ft)',
+      body: '<strong>Source:</strong> Ray, a neighbor and local house builder in Marathon, quoted $250–$300/sq ft for construction (April 2026).<br><br>' +
+            '<strong>Note:</strong> This is a verbal ballpark from a local builder — significantly below the Low tier research estimates. May reflect builder-grade materials, owner-builder savings, or Keys builder pricing vs. mainland contractor rates. Worth getting a formal quote to validate.<br><br>' +
+            '<strong>Construction only:</strong> $250–$300/sq ft. Non-construction line items (pilings, site work, permits, etc.) use Low tier values since those costs are less dependent on finish level.'
+    },
     low: {
       title: 'Low — Builder Grade ($485/sq ft)',
       body: '<strong>Coffee Station:</strong> Formica countertop, two thermofoil base cabinets, single-bowl stainless sink, no appliances (bring your own coffee maker/mini fridge)<br><br>' +
@@ -1023,20 +1029,21 @@
   <table>
     <tr>
       <th>Cost Item</th>
+      <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('ray')">RaytoldLF ⓘ</th>
       <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('low')">Low ⓘ</th>
       <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('high')">High ⓘ</th>
       <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('center')">Center ⓘ</th>
     </tr>
-    <tr><td id="c-con-label">Construction — <span class="cost-sqft">1,000</span> sq ft @ $485–$615/sq ft (no kitchen — coffee station only)</td><td id="c-con-lo">$485,000</td><td id="c-con-hi">$615,000</td><td id="c-con-mid">$550,000</td></tr>
-    <tr><td>Architecture &amp; engineering (8–12%)</td><td id="c-ae-lo">$40,000</td><td id="c-ae-hi">$78,000</td><td id="c-ae-mid">$59,000</td></tr>
-    <tr><td>Pilings / deep foundation</td><td id="c-pile-lo">$40,000</td><td id="c-pile-hi">$80,000</td><td id="c-pile-mid">$60,000</td></tr>
-    <tr><td>Site work (utilities, drainage, sewer)</td><td id="c-site-lo">$25,000</td><td id="c-site-hi">$60,000</td><td id="c-site-mid">$42,500</td></tr>
-    <tr><td>Permits &amp; impact fees</td><td id="c-perm-lo">$15,000</td><td id="c-perm-hi">$35,000</td><td id="c-perm-mid">$25,000</td></tr>
-    <tr><td>BPAS allocation costs</td><td id="c-bpas-lo">$5,000</td><td id="c-bpas-hi">$20,000</td><td id="c-bpas-mid">$12,500</td></tr>
-    <tr><td>Rooftop deck (stairs, railing, waterproofing)</td><td id="c-deck-lo">$15,000</td><td id="c-deck-hi">$35,000</td><td id="c-deck-mid">$25,000</td></tr>
-    <tr><td>Landscaping &amp; hardscape</td><td id="c-land-lo">$20,000</td><td id="c-land-hi">$50,000</td><td id="c-land-mid">$35,000</td></tr>
-    <tr><td>Contingency (10–15%)</td><td id="c-cont-lo">$50,000</td><td id="c-cont-hi">$98,000</td><td id="c-cont-mid">$74,000</td></tr>
-    <tr class="total"><td>TOTAL ALL-IN</td><td id="c-total-lo">$710,000</td><td id="c-total-hi">$1,106,000</td><td id="c-total-mid">$909,000</td></tr>
+    <tr><td id="c-con-label">Construction — <span class="cost-sqft">1,000</span> sq ft @ $250–$615/sq ft (no kitchen — coffee station only)</td><td id="c-con-ray">$275,000</td><td id="c-con-lo">$485,000</td><td id="c-con-hi">$615,000</td><td id="c-con-mid">$550,000</td></tr>
+    <tr><td>Architecture &amp; engineering (8–12%)</td><td id="c-ae-ray">$22,000</td><td id="c-ae-lo">$40,000</td><td id="c-ae-hi">$78,000</td><td id="c-ae-mid">$59,000</td></tr>
+    <tr><td>Pilings / deep foundation</td><td id="c-pile-ray">$40,000</td><td id="c-pile-lo">$40,000</td><td id="c-pile-hi">$80,000</td><td id="c-pile-mid">$60,000</td></tr>
+    <tr><td>Site work (utilities, drainage, sewer)</td><td id="c-site-ray">$25,000</td><td id="c-site-lo">$25,000</td><td id="c-site-hi">$60,000</td><td id="c-site-mid">$42,500</td></tr>
+    <tr><td>Permits &amp; impact fees</td><td id="c-perm-ray">$15,000</td><td id="c-perm-lo">$15,000</td><td id="c-perm-hi">$35,000</td><td id="c-perm-mid">$25,000</td></tr>
+    <tr><td>BPAS allocation costs</td><td id="c-bpas-ray">$5,000</td><td id="c-bpas-lo">$5,000</td><td id="c-bpas-hi">$20,000</td><td id="c-bpas-mid">$12,500</td></tr>
+    <tr><td>Rooftop deck (stairs, railing, waterproofing)</td><td id="c-deck-ray">$15,000</td><td id="c-deck-lo">$15,000</td><td id="c-deck-hi">$35,000</td><td id="c-deck-mid">$25,000</td></tr>
+    <tr><td>Landscaping &amp; hardscape</td><td id="c-land-ray">$20,000</td><td id="c-land-lo">$20,000</td><td id="c-land-hi">$50,000</td><td id="c-land-mid">$35,000</td></tr>
+    <tr><td>Contingency (10–15%)</td><td id="c-cont-ray">$42,000</td><td id="c-cont-lo">$50,000</td><td id="c-cont-hi">$98,000</td><td id="c-cont-mid">$74,000</td></tr>
+    <tr class="total"><td>TOTAL ALL-IN</td><td id="c-total-ray">$459,000</td><td id="c-total-lo">$710,000</td><td id="c-total-hi">$1,106,000</td><td id="c-total-mid">$909,000</td></tr>
   </table>
 
   <h3>Budget Bands by Build Type</h3>
@@ -1058,70 +1065,92 @@
     // Update hero total — dynamically computed from actual total
     // (set after totals calculated below)
 
-    // Construction: $485–$615/sqft (no kitchen, coffee station only)
+    // Construction: $250–$615/sqft (no kitchen, coffee station only)
+    // RaytoldLF: $250–$300/sqft (neighbor builder estimate), midpoint $275
+    var conRay = sq * 275;
     var conLo = sq * 485, conHi = sq * 615, conMid = sq * 550;
+    document.getElementById('c-con-ray').textContent = fmt(conRay);
     document.getElementById('c-con-lo').textContent = fmt(conLo);
     document.getElementById('c-con-hi').textContent = fmt(conHi);
     document.getElementById('c-con-mid').textContent = fmt(conMid);
     // Update label
     document.querySelector('.cost-sqft').textContent = sq.toLocaleString();
 
-    // A&E: 8–12% of construction
+    // A&E: 8–12% of construction (ray uses 8% like low)
+    var aeRay = conRay * 0.08;
     var aeLo = conLo * 0.08, aeHi = conHi * 0.12, aeMid = conMid * 0.10;
+    document.getElementById('c-ae-ray').textContent = fmt(aeRay);
     document.getElementById('c-ae-lo').textContent = fmt(aeLo);
     document.getElementById('c-ae-hi').textContent = fmt(aeHi);
     document.getElementById('c-ae-mid').textContent = fmt(aeMid);
 
     // Pilings: scales with footprint. Base 1000sqft = $40K–$80K, scale linearly
     var s = sq / 1000;
+    var pileRay = 40000 * s;
     var pileLo = 40000 * s, pileHi = 80000 * s, pileMid = 60000 * s;
+    document.getElementById('c-pile-ray').textContent = fmt(pileRay);
     document.getElementById('c-pile-lo').textContent = fmt(pileLo);
     document.getElementById('c-pile-hi').textContent = fmt(pileHi);
     document.getElementById('c-pile-mid').textContent = fmt(pileMid);
 
-    // Site work: partial scale (some fixed, some variable)
+    // Site work: partial scale (some fixed, some variable). Ray uses low values.
+    var siteRay = 15000 + 10000 * s;
     var siteLo = 15000 + 10000 * s, siteHi = 30000 + 30000 * s, siteMid = (15000 + 10000 * s + 30000 + 30000 * s) / 2;
+    document.getElementById('c-site-ray').textContent = fmt(siteRay);
     document.getElementById('c-site-lo').textContent = fmt(siteLo);
     document.getElementById('c-site-hi').textContent = fmt(siteHi);
     document.getElementById('c-site-mid').textContent = fmt(siteMid);
 
-    // Permits: partial scale
+    // Permits: partial scale. Ray uses low values.
+    var permRay = 10000 + 5000 * s;
     var permLo = 10000 + 5000 * s, permHi = 20000 + 15000 * s, permMid = (10000 + 5000 * s + 20000 + 15000 * s) / 2;
+    document.getElementById('c-perm-ray').textContent = fmt(permRay);
     document.getElementById('c-perm-lo').textContent = fmt(permLo);
     document.getElementById('c-perm-hi').textContent = fmt(permHi);
     document.getElementById('c-perm-mid').textContent = fmt(permMid);
 
-    // BPAS: mostly fixed
+    // BPAS: mostly fixed. Ray uses low value.
+    var bpasRay = 5000;
     var bpasLo = 5000, bpasHi = 20000, bpasMid = 12500;
+    document.getElementById('c-bpas-ray').textContent = fmt(bpasRay);
     document.getElementById('c-bpas-lo').textContent = fmt(bpasLo);
     document.getElementById('c-bpas-hi').textContent = fmt(bpasHi);
     document.getElementById('c-bpas-mid').textContent = fmt(bpasMid);
 
-    // Rooftop deck: scales moderately
+    // Rooftop deck: scales moderately. Ray uses low values.
+    var deckRay = 10000 + 5000 * s;
     var deckLo = 10000 + 5000 * s, deckHi = 20000 + 15000 * s, deckMid = (10000 + 5000 * s + 20000 + 15000 * s) / 2;
+    document.getElementById('c-deck-ray').textContent = fmt(deckRay);
     document.getElementById('c-deck-lo').textContent = fmt(deckLo);
     document.getElementById('c-deck-hi').textContent = fmt(deckHi);
     document.getElementById('c-deck-mid').textContent = fmt(deckMid);
 
-    // Landscaping: partial scale
+    // Landscaping: partial scale. Ray uses low values.
+    var landRay = 15000 + 5000 * s;
     var landLo = 15000 + 5000 * s, landHi = 30000 + 20000 * s, landMid = (15000 + 5000 * s + 30000 + 20000 * s) / 2;
+    document.getElementById('c-land-ray').textContent = fmt(landRay);
     document.getElementById('c-land-lo').textContent = fmt(landLo);
     document.getElementById('c-land-hi').textContent = fmt(landHi);
     document.getElementById('c-land-mid').textContent = fmt(landMid);
 
     // Sum before contingency
+    var sumRay = conRay + aeRay + pileRay + siteRay + permRay + bpasRay + deckRay + landRay;
     var sumLo = conLo + aeLo + pileLo + siteLo + permLo + bpasLo + deckLo + landLo;
     var sumHi = conHi + aeHi + pileHi + siteHi + permHi + bpasHi + deckHi + landHi;
     var sumMid = conMid + aeMid + pileMid + siteMid + permMid + bpasMid + deckMid + landMid;
 
-    // Contingency: 10% low, 15% high, 12.5% mid
+    // Contingency: 10% ray/low, 15% high, 12.5% mid
+    var contRay = sumRay * 0.10;
     var contLo = sumLo * 0.10, contHi = sumHi * 0.15, contMid = sumMid * 0.125;
+    document.getElementById('c-cont-ray').textContent = fmt(contRay);
     document.getElementById('c-cont-lo').textContent = fmt(contLo);
     document.getElementById('c-cont-hi').textContent = fmt(contHi);
     document.getElementById('c-cont-mid').textContent = fmt(contMid);
 
     // Totals
+    var totalRay = sumRay + contRay;
     var totalLo = sumLo + contLo, totalHi = sumHi + contHi, totalMid = sumMid + contMid;
+    document.getElementById('c-total-ray').textContent = fmt(totalRay);
     document.getElementById('c-total-lo').textContent = fmt(totalLo);
     document.getElementById('c-total-hi').textContent = fmt(totalHi);
     document.getElementById('c-total-mid').textContent = fmt(totalMid);
@@ -2345,6 +2374,104 @@
       <a href="https://www.monroecounty-fl.gov/DocumentCenter/View/1394/BPAS-Overview" target="_blank" rel="noopener">Monroe County BPAS Overview</a>
     </div>
 
+  </div>
+</section>
+
+<!-- ══ ADDITION vs. ADU ANALYSIS ════════════════════════════════════════════ -->
+<section>
+  <h2>Addition vs. ADU — Regulatory Analysis</h2>
+  <p style="background:var(--sand); border-left:4px solid var(--teal); padding:12px 16px; border-radius:6px; margin-bottom:18px;">
+    <strong>Key insight:</strong> Because this casita has <strong>no kitchen</strong> (coffee station only), it does not meet Florida's statutory definition of an ADU — which requires "a separate kitchen, bathroom, and sleeping area" (F.S. 163.31771). This likely means it can be built as an <strong>addition to the existing home</strong>, bypassing the BPAS queue entirely.
+  </p>
+
+  <h3>Comparison Table</h3>
+  <table>
+    <tr>
+      <th>Factor</th>
+      <th>Addition (attached / breezeway)</th>
+      <th>Standalone ADU</th>
+    </tr>
+    <tr>
+      <td><strong>BPAS required?</strong></td>
+      <td style="color:#2a7; font-weight:bold;">NO — not a new dwelling unit</td>
+      <td style="color:#c44;">YES — 6 to 24 month queue</td>
+    </tr>
+    <tr>
+      <td>Permitting timeline</td>
+      <td>Standard building permit (weeks to months)</td>
+      <td>BPAS allocation + building permit</td>
+    </tr>
+    <tr>
+      <td>Impact fees</td>
+      <td>None (no new dwelling unit created)</td>
+      <td>Yes — new dwelling unit triggers fees</td>
+    </tr>
+    <tr>
+      <td>Insurance</td>
+      <td>Existing homeowner's policy — increase dwelling coverage</td>
+      <td>Separate policy or endorsement needed (10% other-structures limit)</td>
+    </tr>
+    <tr>
+      <td>Property tax</td>
+      <td>Improvement folded into homesteaded property (SOH cap preserved on base)</td>
+      <td>Assessed separately from homestead</td>
+    </tr>
+    <tr>
+      <td>Rental potential</td>
+      <td>Limited — part of home, no separate unit, no kitchen</td>
+      <td>Better but still limited without a kitchen</td>
+    </tr>
+    <tr>
+      <td>Building code</td>
+      <td>180 mph / Cat 5 / BFE+1 ft — identical</td>
+      <td>180 mph / Cat 5 / BFE+1 ft — identical</td>
+    </tr>
+    <tr>
+      <td>Setbacks &amp; height</td>
+      <td>Standard principal structure setbacks (25 ft front, 10 ft canal, 5-10 ft side)</td>
+      <td>Same or slightly relaxed for accessory structures</td>
+    </tr>
+    <tr>
+      <td>SB-48 needed?</td>
+      <td>No — not classified as ADU</td>
+      <td>Possibly — but unclear if SB-48 overrides BPAS in the Keys</td>
+    </tr>
+  </table>
+
+  <h3>The Breezeway Strategy</h3>
+  <p>A covered walkway or breezeway connecting the casita to the main house may be sufficient to classify the structure as an <strong>addition</strong> rather than a detached accessory structure — giving you the architectural feel of a separate building with the regulatory advantages of an addition. This needs confirmation from Marathon Planning.</p>
+
+  <h3>The No-Kitchen Advantage</h3>
+  <p>The decision to build with a coffee station instead of a full kitchen is strategically significant:</p>
+  <ul>
+    <li><strong>Sidesteps ADU classification</strong> — no kitchen = not a dwelling unit under Florida statute</li>
+    <li><strong>Skips BPAS queue</strong> — saves 6-24 months</li>
+    <li><strong>No impact fees</strong> — no new dwelling unit created</li>
+    <li><strong>Future flexibility</strong> — a kitchen can be added later after SB-48 takes effect (Dec 1, 2026) and the ADU/BPAS interaction in the Keys is clarified</li>
+  </ul>
+
+  <h3>Confirm With One Phone Call</h3>
+  <p>Call <strong>Marathon Planning — <a href="tel:3052895057">(305) 289-5057</a></strong> and ask:</p>
+  <ol>
+    <li>"I want to build a 1,000 sq ft addition at 265 Ave G (parcel 00364500-000000) with no kitchen — just bedrooms, bathrooms, and a coffee station. Does it require a BPAS allocation?"</li>
+    <li>"If the structure is connected to the main house by a breezeway, is it classified as an addition?"</li>
+    <li>"What are the setback requirements for my parcel?"</li>
+  </ol>
+
+  <h3>Legal References</h3>
+  <div class="url-grid">
+    <div class="url-card">
+      <div class="url-label">F.S. 163.31771 — ADU Definition</div>
+      <a href="https://law.justia.com/codes/florida/title-xi/chapter-163/part-ii/section-163-31771/" target="_blank" rel="noopener">Florida Statute — ADU Requirements</a>
+    </div>
+    <div class="url-card">
+      <div class="url-label">SB-48 Bill Text (2026)</div>
+      <a href="https://www.flsenate.gov/Session/Bill/2026/48/BillText/c2/HTML" target="_blank" rel="noopener">Florida Senate — SB-48</a>
+    </div>
+    <div class="url-card">
+      <div class="url-label">Marathon BPAS Info</div>
+      <a href="https://www.ci.marathon.fl.us/planning/page/building-permit-allocation-system-bpas" target="_blank" rel="noopener">Marathon BPAS Page</a>
+    </div>
   </div>
 </section>
 
