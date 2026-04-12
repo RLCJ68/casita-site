@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casita at 265 Ave G — Marathon, FL</title>
+  <style>
+    :root {
+      --sand:    #f5f0e8;
+      --white:   #ffffff;
+      --teal:    #2a7f7f;
+      --teal-dk: #1d5c5c;
+      --coral:   #d4603a;
+      --text:    #1a1a1a;
+      --muted:   #555;
+      --border:  #ddd;
+      --green:   #2e7d32;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--sand);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--teal); }
+    a:hover { color: var(--coral); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--teal-dk) 0%, var(--teal) 60%, #3a9e9e 100%);
+      color: white;
+      padding: 72px 24px 56px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 0.85rem;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 52px 0; border-bottom: 1px solid var(--border); }
+    section:last-child { border-bottom: none; }
+    h2 {
+      font-size: 1.6rem;
+      color: var(--teal-dk);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--teal);
+      display: inline-block;
+    }
+    h3 {
+      font-size: 1.15rem;
+      color: var(--teal-dk);
+      margin: 28px 0 10px;
+    }
+    p { margin-bottom: 14px; }
+
+    /* ── CALLOUT BOXES ── */
+    .callout {
+      background: white;
+      border-left: 4px solid var(--teal);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin: 20px 0;
+    }
+    .callout.alert { border-color: var(--coral); }
+    .callout.green { border-color: var(--green); }
+    .callout strong { display: block; margin-bottom: 6px; font-family: system-ui, sans-serif; }
+
+    /* ── TABLES ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-family: system-ui, sans-serif;
+      font-size: 0.92rem;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    th {
+      background: var(--teal-dk);
+      color: white;
+      padding: 11px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafafa; }
+    .total td { background: #e8f5e9 !important; font-weight: 700; }
+    .check { color: var(--green); font-weight: bold; }
+    .warn  { color: var(--coral); font-weight: bold; }
+
+    /* ── CONCEPT CARDS ── */
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .concept-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    }
+    .concept-card .card-header {
+      background: var(--teal);
+      color: white;
+      padding: 16px 20px;
+    }
+    .concept-card .card-header h3 { color: white; margin: 0 0 4px; font-size: 1rem; }
+    .concept-card .card-header .tag {
+      font-family: system-ui, sans-serif;
+      font-size: 0.78rem;
+      opacity: 0.85;
+    }
+    .concept-card .card-body { padding: 18px 20px; font-size: 0.93rem; }
+    .concept-card .card-body ul { padding-left: 18px; margin-top: 8px; }
+    .concept-card .card-body li { margin-bottom: 6px; }
+    .concept-card .cost-badge {
+      display: inline-block;
+      background: var(--sand);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.82rem;
+      margin-top: 12px;
+    }
+    .recommended .card-header { background: var(--coral); }
+    .recommended .cost-badge { background: #fff3ee; border-color: var(--coral); color: var(--coral); }
+
+    /* ── MANUFACTURER CARDS ── */
+    .mfr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .mfr-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    }
+    .mfr-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .mfr-card .mfr-body { padding: 16px 18px; font-size: 0.91rem; }
+    .mfr-card h3 { color: var(--teal-dk); margin: 0 0 8px; font-size: 1rem; }
+    .mfr-card .mfr-cost {
+      font-family: system-ui, sans-serif;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+    .mfr-card a.mfr-link {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--teal);
+      color: white;
+      text-decoration: none;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.82rem;
+    }
+    .mfr-card a.mfr-link:hover { background: var(--teal-dk); }
+
+    /* ── NEXT STEPS ── */
+    .steps { counter-reset: step; list-style: none; padding: 0; margin-top: 20px; }
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .steps li::before {
+      content: counter(step);
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      background: var(--coral);
+      color: white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .steps li .step-text { padding-top: 4px; }
+    .steps li .step-text strong { display: block; font-family: system-ui, sans-serif; }
+
+    /* ── RISK GRID ── */
+    .risk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .risk-item {
+      background: white;
+      border-left: 3px solid var(--coral);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 0.91rem;
+    }
+    .risk-item strong { display: block; font-family: system-ui, sans-serif; margin-bottom: 4px; }
+
+    /* ── URLS SECTION ── */
+    .url-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .url-card {
+      background: white;
+      border-radius: 8px;
+      padding: 14px 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      font-size: 0.9rem;
+    }
+    .url-card .url-label {
+      font-family: system-ui, sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .url-card a { word-break: break-all; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--teal-dk);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 28px 24px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+    }
+    footer strong { color: white; }
+
+    @media (max-width: 600px) {
+      .concept-grid { grid-template-columns: 1fr; }
+      .mfr-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="container">
+    <h1>Casita at 265 Avenue G</h1>
+    <p class="sub">Marathon, FL 33050 &nbsp;·&nbsp; Vaca Key &nbsp;·&nbsp; Parcel 00364500-000000</p>
+    <div class="badge-row">
+      <span class="badge">1,000 sq ft · Two Story</span>
+      <span class="badge">Rooftop Deck</span>
+      <span class="badge">~$909K All-In</span>
+      <span class="badge">SB-48 Protected</span>
+      <span class="badge">BPAS Gated</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══ EXECUTIVE SUMMARY ═════════════════════════════════════════════════════ -->
+<section>
+  <h2>Executive Summary</h2>
+  <p>A 1,000 sq ft two-story casita at the Coco property is legally achievable and sits at the strongest possible legal position: 1,000 sq ft is exactly the floor set by Florida SB-48 (effective December 1, 2026), meaning Marathon cannot deny the size by ordinance after that date.</p>
+
+  <div class="callout green">
+    <strong>The good news</strong>
+    At exactly 1,000 sq ft, SB-48 legally mandates Marathon allow this ADU. No special exception required. No percentage-cap negotiation.
+  </div>
+
+  <div class="callout alert">
+    <strong>The bottleneck</strong>
+    BPAS — Marathon's Building Permit Allocation System — is the only real gating factor. The queue can add 6–24 months. Start here before spending anything on design.
+  </div>
+
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>Lot size requirement</td><td><span class="check">✓ 23,692 sq ft — 8x the 3,000 sq ft minimum</span></td></tr>
+    <tr><td>ADU size — SB-48 (eff. Dec 1, 2026)</td><td><span class="check">✓ 1,000 sq ft is the mandatory floor — cannot be denied</span></td></tr>
+    <tr><td>Zoning</td><td><span class="check">✓ RL/RM residential — ADUs permitted</span></td></tr>
+    <tr><td>Height</td><td><span class="check">✓ Two-story + rooftop deck ≈ 32 ft — under 42 ft cap</span></td></tr>
+    <tr><td>BPAS allocation</td><td><span class="warn">⚠ Unknown queue — call Marathon Planning first</span></td></tr>
+    <tr><td>Main house size (Monroe County records)</td><td>2,005 sq ft · 3BR/3BA · Built 1990</td></tr>
+    <tr><td>Budget (mid-range, all-in)</td><td>$710K–$1.1M · center ~$909K</td></tr>
+  </table>
+</section>
+
+<!-- ══ PROPERTY ══════════════════════════════════════════════════════════════ -->
+<section>
+  <h2>The Property</h2>
+  <table>
+    <tr><th>Field</th><th>Value</th></tr>
+    <tr><td>Address</td><td>265 Avenue G, Marathon, FL 33050</td></tr>
+    <tr><td>Parcel ID</td><td>00364500-000000</td></tr>
+    <tr><td>Key</td><td>Vaca Key</td></tr>
+    <tr><td>Lot size</td><td>23,692 sq ft (~0.54 acres)</td></tr>
+    <tr><td>Current use</td><td>Primary residence — single family</td></tr>
+    <tr><td>Main house</td><td>2,005 sq ft · 3BR/3BA · Built 1990 · Metal roof</td></tr>
+    <tr><td>Estimated value</td><td>~$2.2M</td></tr>
+    <tr><td>Existing mortgage</td><td>~$500K</td></tr>
+  </table>
+</section>
+
+<!-- ══ LEGAL FRAMEWORK ═══════════════════════════════════════════════════════ -->
+<section>
+  <h2>Legal Framework</h2>
+
+  <h3>Monroe County ADU Rules</h3>
+  <table>
+    <tr><th>Rule</th><th>Code Value</th><th>Your Property</th></tr>
+    <tr><td>Minimum lot size</td><td>3,000 sq ft</td><td><span class="check">✓ 23,692 sq ft</span></td></tr>
+    <tr><td>Main house size</td><td>—</td><td>2,005 sq ft (Monroe County records)</td></tr>
+    <tr><td>Max ADU — old 40% rule</td><td>800 sq ft OR 40% of principal</td><td>40% × 2,005 = <strong>802 sq ft</strong> — under your target</td></tr>
+    <tr><td>Max ADU — SB-48 floor (eff. Dec 1, 2026)</td><td>Cannot cap below 1,000 sq ft</td><td><span class="check">✓ 1,000 sq ft is legally protected</span></td></tr>
+    <tr><td>Max bedrooms</td><td>2</td><td>OK</td></tr>
+    <tr><td>Owner occupancy required</td><td>Historically yes</td><td>SB-48 prohibits blanket requirement</td></tr>
+  </table>
+
+  <h3>Florida SB-48 (2025) — The Game Changer</h3>
+  <p>Effective December 1, 2026. Three key preemptions:</p>
+  <ul style="padding-left:20px; margin-bottom:14px;">
+    <li>Cities <strong>cannot ban ADUs</strong> in single-family zones</li>
+    <li>Cities <strong>cannot cap ADU size below 1,000 sq ft</strong></li>
+    <li>Cities <strong>cannot require owner-occupancy</strong> as a blanket condition</li>
+  </ul>
+  <div class="callout green">
+    <strong>Why 1,000 sq ft is the right target</strong>
+    The main house is 2,005 sq ft. Under the old 40% rule, the max ADU would be 802 sq ft — not enough. At exactly 1,000 sq ft, SB-48 legally protects the project. This is the strongest possible position: no negotiation, no exception, no cap variance needed.
+  </div>
+
+  <h3>BPAS — The Real Bottleneck</h3>
+  <p>Marathon's Building Permit Allocation System rations new dwelling units to manage hurricane evacuation capacity. ADUs typically require a BPAS allocation. Queue: <strong>6–24 months</strong>. SB-48 may force Marathon to exempt ADUs from BPAS — not yet clarified. <strong>Call first.</strong></p>
+  <div class="callout alert">
+    <strong>Most important phone call</strong>
+    Marathon Planning Dept: <a href="tel:3052895057">(305) 289-5057</a><br>
+    Ask: "Does a 1,000 sq ft ADU require a BPAS allocation post-SB-48, and what is the current queue?"
+  </div>
+</section>
+
+<!-- ══ DIMENSIONAL STANDARDS ════════════════════════════════════════════════ -->
+<section>
+  <h2>Dimensional Standards</h2>
+
+  <h3>Setbacks</h3>
+  <table>
+    <tr><th>Setback</th><th>Principal Structure</th><th>Accessory Structure</th></tr>
+    <tr><td>Front</td><td>25 ft</td><td>25 ft</td></tr>
+    <tr><td>Side</td><td>10 ft</td><td>5 ft (rear yard)</td></tr>
+    <tr><td>Rear</td><td>15–20 ft</td><td>5 ft minimum; 10 ft recommended</td></tr>
+  </table>
+
+  <h3>Height &amp; Elevation</h3>
+  <p>Maximum building height: <strong>42 ft</strong> citywide. Minimum finished floor: BFE + 1 ft freeboard (~10–12 ft above grade on pilings).</p>
+  <div class="callout">
+    <strong>Rooftop deck feasibility</strong>
+    A two-story 1,000 sq ft casita on pilings reaches ~28–32 ft above grade (10 ft ground + 10 ft first floor + 10 ft second floor + parapet). Well under the 42 ft cap. A rooftop deck with 42" railing and interior stair access is fully achievable — and at 28–32 ft above grade in Marathon, the views are unobstructed toward Florida Bay and the Atlantic. Cost: $15K–$35K for waterproof membrane, drainage, stair, and railing.
+  </div>
+
+  <h3>Lot Coverage</h3>
+  <p>Marathon allows 35–50% lot coverage on 23,692 sq ft — that's 8,000–12,000 sq ft of buildable footprint. A 1,000 sq ft casita is a small fraction of the allowance. Coverage is not a constraint here.</p>
+</section>
+
+<!-- ══ COST ESTIMATE ════════════════════════════════════════════════════════ -->
+<section>
+  <h2>Cost Estimate</h2>
+  <p>Florida Keys construction runs 50–100% above mainland Florida rates due to logistics (one road in), labor scarcity, storm-code requirements, and mandatory piling foundations.</p>
+
+  <table>
+    <tr><th>Cost Item</th><th>Low</th><th>High</th><th>Center</th></tr>
+    <tr><td>Construction — 1,000 sq ft @ mid-range ($500–$650/sq ft)</td><td>$500K</td><td>$650K</td><td>$575K</td></tr>
+    <tr><td>Architecture &amp; engineering (8–12%)</td><td>$40K</td><td>$78K</td><td>$59K</td></tr>
+    <tr><td>Pilings / deep foundation</td><td>$40K</td><td>$80K</td><td>$60K</td></tr>
+    <tr><td>Site work (utilities, drainage, septic)</td><td>$25K</td><td>$60K</td><td>$43K</td></tr>
+    <tr><td>Permits &amp; impact fees</td><td>$15K</td><td>$35K</td><td>$25K</td></tr>
+    <tr><td>BPAS allocation costs</td><td>$5K</td><td>$20K</td><td>$13K</td></tr>
+    <tr><td>Rooftop deck (stairs, railing, waterproofing)</td><td>$15K</td><td>$35K</td><td>$25K</td></tr>
+    <tr><td>Landscaping &amp; hardscape</td><td>$20K</td><td>$50K</td><td>$35K</td></tr>
+    <tr><td>Contingency (10–15%)</td><td>$50K</td><td>$98K</td><td>$74K</td></tr>
+    <tr class="total"><td>TOTAL ALL-IN</td><td>$710K</td><td>$1.106M</td><td>~$909K</td></tr>
+  </table>
+
+  <h3>Budget Bands by Build Type</h3>
+  <table>
+    <tr><th>Type</th><th>Range</th></tr>
+    <tr><td>Value build (modular/panelized)</td><td>$530K–$720K</td></tr>
+    <tr><td>Mid-range site-built <em>(recommended)</em></td><td>$710K–$1.1M · center ~$909K</td></tr>
+    <tr><td>High-end custom</td><td>$900K–$1.25M</td></tr>
+    <tr><td>Architectural showcase</td><td>$1.2M+</td></tr>
+  </table>
+</section>
+
+<!-- ══ COST-SAVING LEVERS ════════════════════════════════════════════════════ -->
+<section>
+  <h2>Cost-Saving Levers</h2>
+
+  <h3>Stack Garage + Storage Below the Living Floors</h3>
+  <p>The elevation requirement forces the first conditioned floor to BFE + 1 ft (~10–12 ft above grade). That vertical space is structurally required regardless — the choice is whether to condition it or use it as ground-level utility. An unconditioned ground level (garage, workshop, gear room, outdoor shower, mechanical) adds 500+ sq ft of usable space at $40–$80/sq ft versus $500–$650/sq ft for conditioned space. The two conditioned floors above (1,000 sq ft total) sit on this base, with the rooftop deck completing the vertical stack.</p>
+
+  <h3>Orient Long Axis East-West</h3>
+  <p>Marathon's prevailing winds are from the southeast. Orienting the long axis east-west captures natural ventilation and minimizes western sun exposure — reducing cooling load by an estimated 15–20%. A 1,000 sq ft two-story building oriented correctly can be cooled with a single 2.5-ton mini-split per floor. Poor orientation can require 3–4 tons per floor. In Keys construction, HVAC sizing also affects energy compliance scoring, which matters for BPAS points.</p>
+
+  <h3>Share Utilities with the Main House</h3>
+  <p>Monroe County and Marathon charge per-connection impact fees for new dwelling units — water and sewer fees alone can run $8,000–$18,000 per unit. A shared connection to the existing main house service avoids a second set of fees entirely, provided existing capacity is sufficient. A second dwelling unit adds approximately 150–200 gallons/day. If the existing septic is at capacity, an upgrade adds $8,000–$25,000. Verify capacity before finalizing the utility approach.</p>
+
+  <h3>Detached but Connected via Covered Walkway</h3>
+  <p>Physical attachment to the main house may reclassify the casita as an addition, triggering different code requirements and consuming square footage allowances. A covered breezeway (4–6 ft wide) provides weather-protected access, can incorporate lighting and a ceiling fan, and reads architecturally as a connective element. Cost: $200–$350/linear foot — typically $8,000–$20,000 total.</p>
+
+  <h3>Modular / Prefab Shell</h3>
+  <p>Factory-built panels from Deltec, Topsider, or Mesocore can save 20–30% versus pure site-built. They also reduce schedule risk — the single biggest variable cost in Keys construction is contractor availability. See manufacturer profiles below.</p>
+</section>
+
+<!-- ══ MODULAR OPTIONS ═══════════════════════════════════════════════════════ -->
+<section>
+  <h2>Modular &amp; Prefab Options</h2>
+  <p>All three manufacturers meet Florida's 180 mph wind design requirement. Factory assembly addresses the two biggest Keys cost drivers: labor scarcity and weather delays.</p>
+
+  <div class="mfr-grid">
+
+    <div class="mfr-card">
+      <img src="https://deltechomes.com/wp-content/uploads/2024/02/6-P-1-St-George-1-1.jpg"
+           alt="Deltec elevated coastal home — hurricane-rated panelized construction"
+           loading="lazy" />
+      <div class="mfr-body">
+        <h3>Deltec Homes</h3>
+        <p>Round panelized homes engineered as wind-deflection systems — no flat face for winds to push against. All 26 Deltecs on Black's Island Florida survived Hurricane Michael. Hurricane Ready models rated to 190 mph. Factory panels arrive on a truck and assemble in days.</p>
+        <p class="mfr-cost">Est. 1,000 sq ft elevated two-story: <strong>$620K–$820K all-in</strong></p>
+        <a class="mfr-link" href="https://deltechomes.com/hurricane/" target="_blank" rel="noopener">deltechomes.com →</a>
+      </div>
+    </div>
+
+    <div class="mfr-card">
+      <img src="https://st.hzcdn.com/simgs/93618d840aec7094_9-4561/home-design.jpg"
+           alt="Topsider elevated pedestal home — Florida Keys, survived Hurricane Irma"
+           loading="lazy" />
+      <div class="mfr-body">
+        <h3>Topsider Homes</h3>
+        <p>Invented the pedestal home in 1968. Built throughout the Florida Keys from Key Largo to Key West. Their post-and-beam system is designed for piling elevation — exactly what's required at 265 Ave G. A Topsider Keys home survived Hurricane Irma intact.</p>
+        <p class="mfr-cost">Est. 1,000 sq ft elevated two-story: <strong>$640K–$850K all-in</strong></p>
+        <a class="mfr-link" href="https://www.topsiderhomes.com/piling-pier-stilt-house-hurricane-home-plans.php" target="_blank" rel="noopener">topsiderhomes.com →</a>
+      </div>
+    </div>
+
+    <div class="mfr-card">
+      <img src="https://framerusercontent.com/images/Cvbq4pl4a0Degg6HTGQe5KEqG3s.jpg"
+           alt="Mesocore modular ADU — factory-built, 180 mph wind-rated"
+           loading="lazy" />
+      <div class="mfr-body">
+        <h3>Mesocore</h3>
+        <p>Florida-based modular ADU specialist. Engineered for 180 mph winds, impact-rated windows and doors, solar-ready design. On-site installation in as little as 10 days — critical in the Keys where contractor availability is the primary schedule risk. BPAS application experience.</p>
+        <p class="mfr-cost">Est. 1,000 sq ft elevated two-story: <strong>$580K–$760K all-in</strong></p>
+        <a class="mfr-link" href="https://www.mesocore.com/florida-adu-builder" target="_blank" rel="noopener">mesocore.com →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ ARCHITECTURAL CONCEPTS ═══════════════════════════════════════════════ -->
+<section>
+  <h2>Architectural Concepts</h2>
+  <p>All four concepts share the same core: 1,000 sq ft conditioned over two stories, elevated on pilings, with a rooftop deck. Each takes a different aesthetic approach.</p>
+
+  <div class="concept-grid">
+
+    <div class="concept-card">
+      <div class="card-header">
+        <h3>Concept A — Elevated Keys Cottage</h3>
+        <div class="tag">Timeless · Resale-Friendly · Neighborhood Fit</div>
+      </div>
+      <div class="card-body">
+        <p>Classic Florida Keys vernacular, two-story. Ground level: open parking, storage, outdoor shower on pilings. First floor (500 sq ft): open living/kitchen/dining. Second floor (500 sq ft): bedrooms and bath.</p>
+        <ul>
+          <li>Rooftop deck via straight stair from second floor, 42" railing, panoramic views</li>
+          <li>Wraparound covered porch on first and second floors</li>
+          <li>Standing-seam metal roof, hardieboard lap siding</li>
+          <li>White-and-seafoam palette, louvered Bahama shutters</li>
+        </ul>
+        <div class="cost-badge">$695K–$850K · includes rooftop deck</div>
+      </div>
+    </div>
+
+    <div class="concept-card">
+      <div class="card-header">
+        <h3>Concept B — Modern Cabana Studio</h3>
+        <div class="tag">Contemporary · Pool-Anchor · Rental-Friendly</div>
+      </div>
+      <div class="card-body">
+        <p>Two-story on pilings with a flat roof that becomes the rooftop deck. First floor (500 sq ft): open living/kitchen with floor-to-ceiling impact glass on the pool-facing side. Second floor (500 sq ft): primary suite and bath with clerestory windows.</p>
+        <ul>
+          <li>Full rooftop observation deck with 42" cable railing, sunset and bay views</li>
+          <li>Board-formed concrete accent wall, natural ipe decking</li>
+          <li>Hidden from the street, opens entirely to the rear yard</li>
+        </ul>
+        <div class="cost-badge">$800K–$980K · high glazing cost</div>
+      </div>
+    </div>
+
+    <div class="concept-card">
+      <div class="card-header">
+        <h3>Concept C — Bahamian Conch Cottage</h3>
+        <div class="tag">Highest Curb Appeal · Keys Identity · STR Potential</div>
+      </div>
+      <div class="card-body">
+        <p>Traditional conch style, two-story. Steep gable, dormers, picket railings, standing-seam tin roof, pastel siding. First floor (500 sq ft): living/kitchen/porch. Second floor (500 sq ft): sleeping loft and bath.</p>
+        <ul>
+          <li>Widows-walk style rooftop deck with white picket railing — historically authentic Keys detail</li>
+          <li>Interior ladder or exterior stair to rooftop</li>
+          <li>Pilings disguised with lattice screens</li>
+        </ul>
+        <div class="cost-badge">$695K–$850K</div>
+      </div>
+    </div>
+
+    <div class="concept-card recommended">
+      <div class="card-header">
+        <h3>Concept D — Garage + Loft ★ Recommended</h3>
+        <div class="tag">Best Value · Most Practical · Keys-Native</div>
+      </div>
+      <div class="card-body">
+        <p>The mandatory piling elevation becomes productive square footage. Ground level (unconditioned): 2-car garage, workshop, fishing gear storage, outdoor shower, mechanical room. First floor (500 sq ft): open living/kitchen/dining, covered porch facing the pool. Second floor (500 sq ft): primary bedroom, bath, office nook, covered balcony.</p>
+        <ul>
+          <li>Rooftop deck via exterior stair from second-floor balcony — the highest vantage point on the property</li>
+          <li>Views over the main house roofline toward Florida Bay</li>
+          <li>Best cost-per-usable-sq-ft of any configuration</li>
+          <li>Ground level at $40–$80/sq ft vs $500–$650/sq ft conditioned</li>
+        </ul>
+        <div class="cost-badge">$695K–$850K · best $/sq ft + free rooftop</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ SITE PLACEMENT ════════════════════════════════════════════════════════ -->
+<section>
+  <h2>Site Placement</h2>
+  <p>A boundary + topo survey is required before design — these are principle-based guidelines only.</p>
+  <ul style="padding-left:20px; margin-bottom:16px;">
+    <li><strong>Rear of lot</strong> — maximizes privacy, simplest setbacks</li>
+    <li><strong>Long axis east-west</strong> — captures SE trade winds, minimizes west sun</li>
+    <li><strong>20–30 ft separation</strong> from main house — preserves detached ADU status, allows pool/courtyard between</li>
+    <li><strong>Connected by covered walkway</strong> — functional link without attachment</li>
+    <li><strong>10 ft from all fences</strong> — even if code allows 5 ft, 10 ft avoids neighbor friction</li>
+    <li><strong>Preserve mature trees</strong> — shade is gold in the Keys and increases appraisal</li>
+  </ul>
+  <div class="callout">
+    <strong>Suggested layout</strong>
+    Main house at the street-facing side → pool + deck in the middle third → casita at the rear, long side parallel to the rear fence → covered breezeway or pergola connecting all three.
+  </div>
+</section>
+
+<!-- ══ NEXT STEPS ═══════════════════════════════════════════════════���════════ -->
+<section>
+  <h2>Next Steps</h2>
+  <ol class="steps">
+    <li>
+      <div class="step-text">
+        <strong>Call Marathon Planning — (305) 289-5057</strong>
+        Ask: "Does a 1,000 sq ft ADU require a BPAS allocation post-SB-48, and what is the current queue for parcel 00364500-000000?" This single call reveals whether this is a 2026 project or a 2028 project.
+      </div>
+    </li>
+    <li>
+      <div class="step-text">
+        <strong>Commission a boundary + topographical survey</strong>
+        ~$2,500–$4,500. Non-negotiable before design. Confirms buildable envelope, tree locations, and exact setback lines.
+      </div>
+    </li>
+    <li>
+      <div class="step-text">
+        <strong>Pull FEMA flood zone + BFE</strong>
+        Marathon is updating flood maps. Datum shift (NGVD29 → NAVD88) = ~-1.5 ft average. Confirm your BFE before designing finished floor elevation.
+      </div>
+    </li>
+    <li>
+      <div class="step-text">
+        <strong>Verify septic capacity</strong>
+        A second dwelling unit adds ~150–200 gallons/day. If the existing system is at capacity, budget $8,000–$25,000 for an upgrade.
+      </div>
+    </li>
+    <li>
+      <div class="step-text">
+        <strong>Interview 2–3 Marathon-local GCs and 2 architects</strong>
+        Architects with BPAS scoring experience are especially valuable — design choices affect your point score and wait time.
+      </div>
+    </li>
+    <li>
+      <div class="step-text">
+        <strong>Decide: modular shell or full site-built?</strong>
+        Request quotes from Mesocore, Deltec, and Topsider alongside local GCs. Modular can save 20–30% and 6–8 weeks.
+      </div>
+    </li>
+    <li>
+      <div class="step-text">
+        <strong>File BPAS application</strong>
+        As soon as zoning path is confirmed — the allocation clock starts at filing, not at design completion.
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ══ RISKS ══════════════════════════════════════════════════════════════════ -->
+<section>
+  <h2>Risks &amp; Watchouts</h2>
+  <div class="risk-grid">
+    <div class="risk-item"><strong>BPAS queue</strong>Marathon permit-constrained. Allocation: 6–24 months depending on current queue.</div>
+    <div class="risk-item"><strong>SB-48 implementation</strong>Marathon's compliance rules may not be finalized until late 2026.</div>
+    <div class="risk-item"><strong>Flood zone shift</strong>New FEMA maps may raise your BFE and add foundation cost.</div>
+    <div class="risk-item"><strong>Short-term rental</strong>Marathon caps vacation rentals. Verify if rental income is the goal.</div>
+    <div class="risk-item"><strong>Cost inflation</strong>Keys construction has averaged 7–12%/year. Budget contingency accordingly.</div>
+    <div class="risk-item"><strong>Neighbor notification</strong>ADU permits may trigger adjacent-owner notice — anticipate feedback.</div>
+    <div class="risk-item"><strong>Insurance</strong>Adding a second dwelling will substantially increase wind + flood premiums.</div>
+    <div class="risk-item"><strong>Septic capacity</strong>Verify existing system can handle a second dwelling unit or budget for upgrade.</div>
+  </div>
+</section>
+
+<!-- ══ IMPORTANT URLS ════════════════════════════════════════════════════════ -->
+<section>
+  <h2>Important Links</h2>
+  <div class="url-grid">
+
+    <div class="url-card">
+      <div class="url-label">Marathon Planning Dept</div>
+      <strong>(305) 289-5057</strong><br>
+      <a href="https://www.ci.marathon.fl.us/planning" target="_blank" rel="noopener">ci.marathon.fl.us/planning</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Marathon Building Dept</div>
+      <strong>(305) 289-5052</strong><br>
+      <a href="https://www.ci.marathon.fl.us/building" target="_blank" rel="noopener">ci.marathon.fl.us/building</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Monroe County Property Appraiser</div>
+      <a href="https://www.mcpafl.org/" target="_blank" rel="noopener">mcpafl.org</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Parcel Record — 00364500-000000</div>
+      <a href="https://qpublic.schneidercorp.com/Application.aspx?AppID=605&LayerID=9946&PageTypeID=2&PageID=4381&KeyValue=00364500-000000" target="_blank" rel="noopener">Monroe County qPublic →</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Marathon Land Development Code</div>
+      <a href="https://library.municode.com/fl/marathon/codes/code_of_ordinances?nodeId=CH107LADECO" target="_blank" rel="noopener">Municode — Chapter 107</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Florida SB-48 (2025) — ADU Preemption</div>
+      <a href="https://www.flsenate.gov/Session/Bill/2025/48" target="_blank" rel="noopener">flsenate.gov — SB-48</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">FEMA Flood Map — Marathon FL</div>
+      <a href="https://msc.fema.gov/portal/search#searchresultsanchor" target="_blank" rel="noopener">FEMA MSC Portal</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Florida Building Code 8th Ed.</div>
+      <a href="https://floridabuilding.org/c/default.aspx" target="_blank" rel="noopener">floridabuilding.org</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Deltec Homes — Hurricane-Rated Prefab</div>
+      <a href="https://deltechomes.com/hurricane/" target="_blank" rel="noopener">deltechomes.com/hurricane</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Topsider Homes — Florida Keys</div>
+      <a href="https://www.topsiderhomes.com/beach-front-coastal-stilt-home-building.php" target="_blank" rel="noopener">topsiderhomes.com</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Mesocore — Florida ADU Builder</div>
+      <a href="https://www.mesocore.com/florida-adu-builder" target="_blank" rel="noopener">mesocore.com/florida-adu-builder</a>
+    </div>
+
+    <div class="url-card">
+      <div class="url-label">Monroe County BPAS Info</div>
+      <a href="https://www.monroecounty-fl.gov/DocumentCenter/View/1394/BPAS-Overview" target="_blank" rel="noopener">Monroe County BPAS Overview</a>
+    </div>
+
+  </div>
+</section>
+
+</div><!-- /container -->
+
+<footer>
+  <strong>265 Avenue G · Marathon, FL 33050 · Coco Property</strong><br>
+  Prepared by Neal (Claude) for RL · Last updated April 2026 · Verify all code citations with Marathon Planning before spending on design.
+</footer>
+
+</body>
+</html>
