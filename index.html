@@ -290,10 +290,48 @@
     <div class="badge-row">
       <span class="badge">1,000 sq ft · Two Story</span>
       <span class="badge">Rooftop Deck</span>
-      <span class="badge">~$909K All-In</span>
+      <span class="badge">No Kitchen · Coffee Station</span>
       <span class="badge">SB-48 Protected</span>
       <span class="badge">BPAS Gated</span>
     </div>
+
+  </div>
+</div>
+
+<!-- Hero aerial overlay — full width, above the container -->
+<div style="max-width:600px; margin:24px auto 0; padding:0 24px;">
+  <div style="position:relative; display:inline-block; width:100%; border-radius:10px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.2);">
+    <img src="/static/parcel-aerial.jpg" alt="265 Avenue G — proposed casita placement" style="width:100%; display:block;"/>
+    <svg style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;" viewBox="0 0 377 492" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="roofhatch-hero" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(18)">
+          <line x1="0" y1="0" x2="0" y2="6" stroke="#b8560a" stroke-width="0.8" opacity="0.4"/>
+        </pattern>
+      </defs>
+      <!-- Casita 20x50 -->
+      <rect x="235" y="388" width="54" height="22" fill="rgba(255,180,60,0.65)" stroke="#d4603a" stroke-width="2.5" rx="1"/>
+      <text x="262" y="403" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#fff" style="text-shadow:0 0 3px #8B3300, 0 0 6px #8B3300;">CASITA</text>
+      <text x="262" y="383" text-anchor="middle" font-size="8" font-family="system-ui" font-weight="700" fill="#8B3300" style="text-shadow:0 0 4px white, 0 0 8px white;">1,000 sq ft ★</text>
+      <!-- Covered walkway -->
+      <polygon points="237,388  231,388  202,275  208,275" fill="rgba(160,120,60,0.5)" stroke="#8B5A2B" stroke-width="1"/>
+      <polygon points="237,388  231,388  202,275  208,275" fill="url(#roofhatch-hero)"/>
+      <!-- Columns -->
+      <circle cx="234" cy="385" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="228" cy="362" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="222" cy="339" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="216" cy="316" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="210" cy="293" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="205" cy="275" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="240" cy="385" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="234" cy="362" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="228" cy="339" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="222" cy="316" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="216" cy="293" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="211" cy="275" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <!-- Setbacks -->
+      <line x1="190" y1="410" x2="308" y2="410" stroke="#cc8800" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+      <line x1="298" y1="365" x2="298" y2="440" stroke="#cc8800" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+    </svg>
   </div>
 </div>
 
@@ -347,205 +385,96 @@
   <h2>The Lot — Satellite View &amp; Site Plan</h2>
   <p>265 Avenue G sits on a 23,692 sq ft lot on Vaca Key — large by Keys standards. Below is the live satellite view followed by a proposed site layout showing how the casita, pool, and covered walkway could be arranged.</p>
 
-  <!-- Google Maps Satellite Embed -->
-  <div style="border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.15); margin-bottom:28px;">
-    <iframe
-      src="https://maps.google.com/maps?q=265+Avenue+G,+Marathon,+FL+33050&t=k&z=19&ie=UTF8&iwloc=&output=embed"
-      width="100%" height="400" frameborder="0" style="border:0; display:block;"
-      allowfullscreen loading="lazy" title="265 Avenue G Marathon FL — Satellite View">
-    </iframe>
+  <!-- County Parcel Aerial -->
+  <div style="border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.15); margin-bottom:12px;">
+    <a href="https://qpublic.schneidercorp.com/Application.aspx?AppID=605&LayerID=9946&PageTypeID=1&PageID=0&Q=1665898366&KeyValue=00364500-000000" target="_blank" rel="noopener">
+      <img src="/static/parcel-aerial.jpg" alt="265 Avenue G — Monroe County Parcel Aerial with plat overlay" style="width:100%; display:block; max-height:600px; object-fit:contain;" loading="lazy"/>
+    </a>
   </div>
+  <p style="font-size:0.8rem; color:var(--muted); text-align:center; margin-bottom:24px;">Monroe County parcel 00364500-000000. <a href="https://qpublic.schneidercorp.com/Application.aspx?AppID=605&LayerID=9946&PageTypeID=1&PageID=0&Q=1665898366&KeyValue=00364500-000000" target="_blank" rel="noopener">View interactive map →</a></p>
 
-  <!-- SVG Site Plan — v3, redrawn from county aerial parcel 364500 -->
-  <h3>Proposed Site Layout</h3>
-  <p style="font-size:0.9rem; color:var(--muted); margin-bottom:16px;">Traced from Monroe County plat aerial. West side 128 ft, east side 223 ft. North waterfront curves along shoreline. Commission a boundary survey before design.</p>
+  <!-- Aerial photo with casita overlay -->
+  <h3>Proposed Casita Placement</h3>
+  <p style="font-size:0.9rem; color:var(--muted); margin-bottom:16px;">Casita placed in the SE corner at maximum setback limits: 25 ft from south fence, 10 ft from east canal boundary.</p>
 
-  <div style="background:white; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.09); padding:8px;">
-  <svg viewBox="0 0 500 580" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
-    <defs>
-      <pattern id="grass" patternUnits="userSpaceOnUse" width="8" height="8">
-        <rect width="8" height="8" fill="#c8e0a0"/>
-        <line x1="0" y1="4" x2="8" y2="4" stroke="#b8d090" stroke-width="0.3"/>
-        <line x1="4" y1="0" x2="4" y2="8" stroke="#b8d090" stroke-width="0.3"/>
-      </pattern>
-      <pattern id="concrete" patternUnits="userSpaceOnUse" width="12" height="12">
-        <rect width="12" height="12" fill="#d8d0c0"/>
-        <rect width="12" height="12" fill="none" stroke="#c8c0b0" stroke-width="0.4"/>
-      </pattern>
-      <pattern id="water" patternUnits="userSpaceOnUse" width="20" height="12">
-        <rect width="20" height="12" fill="#5ba8c8"/>
-        <path d="M0,6 Q5,3 10,6 Q15,9 20,6" stroke="#72c0e0" stroke-width="0.8" fill="none"/>
-      </pattern>
-    </defs>
+  <div style="position:relative; display:inline-block; width:100%; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.09);">
+    <!-- Aerial base image -->
+    <img src="/static/parcel-aerial.jpg" alt="265 Avenue G aerial with casita overlay" style="width:100%; display:block;"/>
 
-    <!-- Scale: ~1.5 px/ft. SW:(55,475) NW:(55,283) NE:(422,179) SE jog:(257,475→257,513→422,513) -->
+    <!-- All overlays in one SVG, viewBox matches image pixel dimensions -->
+    <svg style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;" viewBox="0 0 377 492" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <!-- Roof pattern for walkway -->
+        <pattern id="roofhatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(18)">
+          <line x1="0" y1="0" x2="0" y2="6" stroke="#b8560a" stroke-width="0.8" opacity="0.4"/>
+        </pattern>
+      </defs>
 
-    <!-- ══ WATER BACKGROUND ══ -->
-    <rect x="0" y="0" width="500" height="580" fill="url(#water)"/>
-    <!-- Neighboring land east + south -->
-    <polygon points="422,179 422,513 500,513 500,0 460,0 460,155" fill="#c8bc98" opacity="0.25"/>
-    <rect x="0" y="475" width="500" height="105" fill="#c8bc98" opacity="0.25"/>
-    <text x="30" y="350" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#1d6a8a" transform="rotate(-90,30,350)">C A N A L</text>
-    <text x="260" y="55" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#1d6a8a">FLORIDA BAY</text>
+      <!-- ══ CASITA — 20ft x 50ft rectangle, SE area, nudged west ══ -->
+      <!-- 50ft E-W (~54px), 20ft N-S (~22px). 25ft from south fence, 10ft from canal -->
+      <!-- South boundary ~y=435, east boundary ~x=310 -->
+      <!-- Casita: x=235 to x=289 (54px), y=388 to y=410 (22px) -->
+      <rect x="235" y="388" width="54" height="22"
+            fill="rgba(255,180,60,0.65)" stroke="#d4603a" stroke-width="2.5" rx="1"/>
+      <!-- Casita label -->
+      <text x="262" y="403" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#fff"
+            style="text-shadow:0 0 3px #8B3300, 0 0 6px #8B3300;">CASITA</text>
+      <text x="262" y="383" text-anchor="middle" font-size="8" font-family="system-ui" font-weight="700" fill="#8B3300"
+            style="text-shadow:0 0 4px white, 0 0 8px white;">1,000 sq ft ★</text>
+      <text x="262" y="422" text-anchor="middle" font-size="7" font-family="system-ui" fill="#8B3300"
+            style="text-shadow:0 0 3px white;">20 × 50 ft footprint</text>
 
-    <!-- ══ LOT — actual shape from plat ══ -->
-    <path d="M 55,475
-             L 257,475
-             L 257,513
-             L 422,513
-             L 422,179
-             C 415,115  310,80  220,85
-             C 140,92   65,155  55,283
-             Z"
-          fill="url(#grass)" stroke="#444" stroke-width="2.5"/>
-    <path d="M 55,475
-             L 257,475
-             L 257,513
-             L 422,513
-             L 422,179
-             C 415,115  310,80  220,85
-             C 140,92   65,155  55,283
-             Z"
-          fill="none" stroke="#00dde0" stroke-width="2" opacity="0.6"/>
+      <!-- ══ COVERED WALKWAY — rendered structure from casita to house ══ -->
+      <!-- From casita NW corner (~235,388) to house SE area (~210,275) -->
+      <!-- Angle: ~18° west of north. Width ~6ft = ~7px -->
 
-    <!-- ══ DIMENSION LABELS ══ -->
-    <text x="156" y="468" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#333">135 ft</text>
-    <text x="263" y="497" font-size="8" font-family="system-ui" font-weight="600" fill="#333">25</text>
-    <text x="340" y="507" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#333">110 ft</text>
-    <text x="435" y="355" text-anchor="start" font-size="9" font-family="system-ui" font-weight="700" fill="#333" transform="rotate(90,435,355)">222.81 ft</text>
-    <text x="320" y="73" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#fff">164.97 ft</text>
-    <text x="43" y="385" text-anchor="end" font-size="9" font-family="system-ui" font-weight="700" fill="#fff" transform="rotate(-90,43,385)">127.99 ft</text>
+      <!-- Walkway roof (filled corridor) -->
+      <polygon points="237,388  231,388  202,275  208,275"
+               fill="rgba(160,120,60,0.5)" stroke="#8B5A2B" stroke-width="1"/>
+      <!-- Roof ridge line -->
+      <line x1="234" y1="388" x2="205" y2="275" stroke="#8B5A2B" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
+      <!-- Roof hatch pattern overlay -->
+      <polygon points="237,388  231,388  202,275  208,275" fill="url(#roofhatch)"/>
 
-    <!-- ══ AVENUE G — enters lower-left, dead-ends ══ -->
-    <polygon points="0,462  0,530  257,530  257,513  55,513  55,475  0,475" fill="#a8a080"/>
-    <line x1="5" y1="502" x2="55" y2="494" stroke="#fff" stroke-width="1.2" stroke-dasharray="14,9"/>
-    <line x1="55" y1="521" x2="248" y2="521" stroke="#fff" stroke-width="1.2" stroke-dasharray="14,9"/>
-    <text x="130" y="536" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#f0ece0">AVENUE G</text>
-    <text x="25" y="518" text-anchor="middle" font-size="7" font-family="system-ui" fill="#d8d0c0" transform="rotate(-8,25,518)">\u2190 US-1</text>
+      <!-- Support columns (every ~20ft along walkway, ~22px) -->
+      <circle cx="234" cy="385" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="228" cy="362" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="222" cy="339" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="216" cy="316" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="210" cy="293" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="205" cy="275" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <!-- Right side columns -->
+      <circle cx="240" cy="385" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="234" cy="362" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="228" cy="339" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="222" cy="316" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="216" cy="293" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
+      <circle cx="211" cy="275" r="2.5" fill="#8B5A2B" stroke="#fff" stroke-width="0.8"/>
 
-    <!-- ══ DRIVEWAY — enters from SW, north up left side ══ -->
-    <rect x="57" y="430" width="32" height="47" fill="url(#concrete)"/>
-    <rect x="59" y="255" width="28" height="177" fill="url(#concrete)"/>
-    <rect x="59" y="270" width="70" height="50" fill="url(#concrete)" opacity="0.85"/>
-    <text x="73" y="380" text-anchor="middle" font-size="7" font-family="system-ui" fill="#666" transform="rotate(-90,73,380)">DRIVEWAY</text>
-    <text x="94" y="298" text-anchor="middle" font-size="6.5" font-family="system-ui" fill="#777">PARKING</text>
+      <!-- Walkway label -->
+      <text x="248" y="340" text-anchor="start" font-size="8" font-family="system-ui" font-weight="600" fill="#5A3310"
+            transform="rotate(-75,248,340)"
+            style="text-shadow:0 0 4px white, 0 0 8px white;">COVERED WALKWAY</text>
 
-    <!-- ══ MAIN HOUSE — center-west, upper third ══ -->
-    <rect x="135" y="265" width="105" height="75" fill="#f0ebe0" stroke="#555" stroke-width="2"/>
-    <line x1="135" y1="302" x2="240" y2="302" stroke="#ccc" stroke-width="0.8" stroke-dasharray="4,3"/>
-    <rect x="170" y="336" width="28" height="7" fill="#e0d8c8" stroke="#aaa" stroke-width="0.8"/>
-    <rect x="135" y="280" width="4" height="18" fill="#c8c0b0" stroke="#999" stroke-width="0.7"/>
-    <text x="187" y="291" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">MAIN HOUSE</text>
-    <text x="187" y="304" text-anchor="middle" font-size="7.5" font-family="system-ui" fill="#555">2,005 sq ft</text>
-    <text x="187" y="315" text-anchor="middle" font-size="7" font-family="system-ui" fill="#777">3BR / 3BA / 1990</text>
+      <!-- ══ SETBACK LINES ══ -->
+      <!-- 25ft south setback -->
+      <line x1="190" y1="410" x2="308" y2="410" stroke="#cc8800" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+      <text x="312" y="409" font-size="7.5" font-family="system-ui" fill="#cc8800" font-weight="600"
+            style="text-shadow:0 0 3px white;">25 ft</text>
+      <!-- 10ft east setback -->
+      <line x1="298" y1="365" x2="298" y2="440" stroke="#cc8800" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+      <text x="293" y="363" font-size="7.5" font-family="system-ui" fill="#cc8800" font-weight="600" text-anchor="end"
+            style="text-shadow:0 0 3px white;">10 ft</text>
 
-    <!-- ══ POOL — north of house, slightly east, near waterfront ══ -->
-    <rect x="240" y="165" width="90" height="60" rx="6" fill="#d5e5c5" stroke="#aaa" stroke-width="0.8"/>
-    <ellipse cx="282" cy="190" rx="32" ry="18" fill="#48a8cc" opacity="0.85"/>
-    <ellipse cx="302" cy="182" rx="14" ry="11" fill="#48a8cc" opacity="0.85"/>
-    <text x="288" y="195" text-anchor="middle" font-size="8" font-family="system-ui" fill="#fff" font-weight="600">POOL</text>
-    <rect x="245" y="222" width="80" height="12" rx="2" fill="#d5e5c5" stroke="#bbb" stroke-width="0.5"/>
-
-    <!-- ══ DOCK — extends north from waterline into bay ══ -->
-    <rect x="195" y="95" width="35" height="60" fill="#b0a080" stroke="#888" stroke-width="1" opacity="0.7"/>
-    <rect x="200" y="82" width="25" height="18" fill="#c0b890" stroke="#999" stroke-width="0.8" opacity="0.6"/>
-    <text x="212" y="140" text-anchor="middle" font-size="7" font-family="system-ui" fill="#666">DOCK</text>
-
-    <!-- ══ PROPOSED CASITA — south half, in tree canopy area ══ -->
-    <rect x="180" y="388" width="60" height="56" rx="2" fill="#ffd080" stroke="#d4603a" stroke-width="2.5"/>
-    <rect x="180" y="388" width="60" height="56" fill="none" stroke="#d4603a" stroke-width="1" stroke-dasharray="2,2" opacity="0.4"/>
-    <text x="210" y="407" text-anchor="middle" font-size="8.5" font-family="system-ui" font-weight="700" fill="#8B3300">CASITA</text>
-    <text x="210" y="419" text-anchor="middle" font-size="7" font-family="system-ui" fill="#8B3300">1,000 sq ft</text>
-    <text x="210" y="430" text-anchor="middle" font-size="6.5" font-family="system-ui" fill="#8B3300">2 stories + roof deck</text>
-    <text x="234" y="395" font-size="9" fill="#d4603a">\u2605</text>
-
-    <!-- ══ COVERED WALKWAY — casita to house ══ -->
-    <rect x="198" y="343" width="12" height="45" fill="#e0d8c0" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3,2"/>
-    <text x="190" y="368" text-anchor="end" font-size="6.5" font-family="system-ui" fill="#888" transform="rotate(-90,190,368)">covered walk</text>
-
-    <!-- ══ OUTDOOR SHOWER ══ -->
-    <rect x="246" y="400" width="12" height="10" rx="2" fill="#90b8c8" stroke="#888" stroke-width="0.7"/>
-    <text x="252" y="422" text-anchor="middle" font-size="6" font-family="system-ui" fill="#555">shower</text>
-
-    <!-- ══ TREES ══ -->
-    <!-- Heavy canopy — south half -->
-    <circle cx="110" cy="450" r="18" fill="#357010" opacity="0.6"/>
-    <circle cx="145" cy="462" r="14" fill="#448818" opacity="0.55"/>
-    <circle cx="100" cy="425" r="12" fill="#509028" opacity="0.5"/>
-    <circle cx="285" cy="455" r="20" fill="#357010" opacity="0.6"/>
-    <circle cx="320" cy="475" r="16" fill="#448818" opacity="0.55"/>
-    <circle cx="355" cy="460" r="13" fill="#509028" opacity="0.5"/>
-    <circle cx="388" cy="485" r="17" fill="#357010" opacity="0.55"/>
-    <circle cx="400" cy="455" r="12" fill="#448818" opacity="0.5"/>
-    <circle cx="260" cy="470" r="11" fill="#509028" opacity="0.5"/>
-    <circle cx="150" cy="490" r="10" fill="#448818" opacity="0.5"/>
-    <circle cx="330" cy="500" r="14" fill="#357010" opacity="0.5"/>
-    <!-- Palms near house/pool -->
-    <circle cx="145" cy="255" r="5" fill="#306818" opacity="0.8"/>
-    <circle cx="250" cy="250" r="5" fill="#306818" opacity="0.8"/>
-    <circle cx="340" cy="172" r="6" fill="#306818" opacity="0.8"/>
-    <circle cx="165" cy="200" r="5" fill="#306818" opacity="0.8"/>
-    <circle cx="280" cy="150" r="5" fill="#306818" opacity="0.8"/>
-    <!-- Waterfront vegetation -->
-    <circle cx="75" cy="195" r="12" fill="#256818" opacity="0.5"/>
-    <circle cx="70" cy="240" r="9" fill="#357010" opacity="0.45"/>
-    <circle cx="95" cy="155" r="10" fill="#256818" opacity="0.5"/>
-    <circle cx="130" cy="115" r="11" fill="#256818" opacity="0.5"/>
-    <circle cx="375" cy="120" r="14" fill="#256818" opacity="0.45"/>
-    <circle cx="405" cy="160" r="10" fill="#357010" opacity="0.45"/>
-    <circle cx="300" cy="95" r="9" fill="#256818" opacity="0.4"/>
-    <!-- East side -->
-    <circle cx="400" cy="340" r="14" fill="#448818" opacity="0.5"/>
-    <circle cx="410" cy="380" r="11" fill="#509028" opacity="0.45"/>
-
-    <!-- ══ SETBACK LINES ══ -->
-    <line x1="55" y1="450" x2="257" y2="450" stroke="#cc8800" stroke-width="0.8" stroke-dasharray="5,4" opacity="0.5"/>
-    <line x1="257" y1="488" x2="422" y2="488" stroke="#cc8800" stroke-width="0.8" stroke-dasharray="5,4" opacity="0.5"/>
-    <text x="425" y="491" font-size="7" font-family="system-ui" fill="#cc8800">25 ft</text>
-    <line x1="407" y1="179" x2="407" y2="513" stroke="#cc8800" stroke-width="0.7" stroke-dasharray="5,4" opacity="0.4"/>
-    <path d="M 85,283 C 85,170 155,115 235,108 C 325,100 400,135 408,195"
-          stroke="#cc8800" stroke-width="0.7" stroke-dasharray="5,4" fill="none" opacity="0.4"/>
-
-    <!-- ══ NEIGHBOR 263 ══ -->
-    <rect x="432" y="220" width="40" height="55" fill="#e0d8c8" stroke="#ccc" stroke-width="0.8" opacity="0.3"/>
-    <text x="452" y="250" text-anchor="middle" font-size="6" font-family="system-ui" fill="#aaa">263</text>
-
-    <!-- ══ COMPASS ROSE ══ -->
-    <g transform="translate(455,90)">
-      <circle cx="0" cy="0" r="20" fill="rgba(255,255,255,0.9)" stroke="#aaa" stroke-width="0.8"/>
-      <polygon points="0,-15 3,-4 0,-8 -3,-4" fill="#333"/>
-      <polygon points="0,15 3,4 0,8 -3,4" fill="#ccc"/>
-      <polygon points="-15,0 -4,3 -8,0 -4,-3" fill="#ccc"/>
-      <polygon points="15,0 4,3 8,0 4,-3" fill="#ccc"/>
-      <text x="0" y="-19" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="700" fill="#333">N</text>
-    </g>
-
-    <!-- ══ SCALE BAR ══ -->
-    <g transform="translate(60,555)">
-      <rect x="0" y="0" width="45" height="4" fill="#444"/>
-      <rect x="45" y="0" width="45" height="4" fill="#fff" stroke="#444" stroke-width="0.4"/>
-      <rect x="90" y="0" width="45" height="4" fill="#444"/>
-      <text x="0" y="13" font-size="7" font-family="system-ui" fill="#555">0</text>
-      <text x="42" y="13" font-size="7" font-family="system-ui" fill="#555">30 ft</text>
-      <text x="87" y="13" font-size="7" font-family="system-ui" fill="#555">60 ft</text>
-      <text x="132" y="13" font-size="7" font-family="system-ui" fill="#555">90 ft</text>
-    </g>
-
-    <!-- ══ LEGEND ══ -->
-    <g transform="translate(250,548)">
-      <rect x="0" y="0" width="9" height="9" fill="#ffd080" stroke="#d4603a" stroke-width="1.2"/>
-      <text x="13" y="8" font-size="7.5" font-family="system-ui" fill="#333">Casita (proposed)</text>
-      <rect x="105" y="0" width="9" height="9" fill="#f0ebe0" stroke="#555" stroke-width="1.2"/>
-      <text x="118" y="8" font-size="7.5" font-family="system-ui" fill="#333">Main House</text>
-      <rect x="0" y="14" width="9" height="9" fill="#e0d8c0" stroke="#bbb" stroke-width="0.7" stroke-dasharray="2,1"/>
-      <text x="13" y="22" font-size="7.5" font-family="system-ui" fill="#333">Walkway</text>
-      <line x1="105" y1="19" x2="114" y2="19" stroke="#cc8800" stroke-width="0.8" stroke-dasharray="3,2"/>
-      <text x="118" y="22" font-size="7.5" font-family="system-ui" fill="#333">Setbacks</text>
-    </g>
-
-    <!-- ══ TITLE ══ -->
-    <text x="250" y="545" text-anchor="middle" font-size="11" font-family="system-ui" font-weight="600" fill="#1d5c5c">265 AVENUE G \u2014 PROPOSED SITE PLAN</text>
-  </svg>
+      <!-- ══ LEGEND ══ -->
+      <rect x="8" y="452" width="155" height="32" rx="5" fill="rgba(255,255,255,0.85)"/>
+      <rect x="14" y="459" width="10" height="10" fill="rgba(255,180,60,0.7)" stroke="#d4603a" stroke-width="1.5"/>
+      <text x="28" y="468" font-size="8" font-family="system-ui" fill="#333">Proposed Casita (20×50)</text>
+      <rect x="14" y="473" width="10" height="5" fill="rgba(160,120,60,0.5)" stroke="#8B5A2B" stroke-width="0.8"/>
+      <text x="28" y="479" font-size="8" font-family="system-ui" fill="#333">Covered Walkway</text>
+      <line x1="105" y1="476" x2="118" y2="476" stroke="#cc8800" stroke-width="1.2" stroke-dasharray="3,2"/>
+      <text x="122" y="479" font-size="8" font-family="system-ui" fill="#333">Setbacks</text>
+    </svg>
   </div>
 </section>
 
@@ -1016,28 +945,201 @@
   <h2>Cost Estimate</h2>
   <p>Florida Keys construction runs 50–100% above mainland Florida rates due to logistics (one road in), labor scarcity, storm-code requirements, and mandatory piling foundations.</p>
 
+  <div class="callout green">
+    <strong>No kitchen — coffee station only</strong>
+    This casita has no full kitchen. Just a sink, countertop, and a couple of cabinets for a coffee station. This reduces construction costs ~$15K–$35K versus a full kitchen build. All flooring is luxury vinyl plank (LVP) throughout. Click the Low / High / Center headers in the table below to see exactly what each tier includes.
+  </div>
+
+  <div style="background:var(--teal); border-radius:10px; padding:16px 22px; margin-bottom:20px; color:white;">
+    <div style="font-family:system-ui,sans-serif; font-size:0.95rem; font-weight:600; margin-bottom:4px;">Cost Estimator</div>
+    <div style="font-family:system-ui,sans-serif; font-size:0.78rem; opacity:0.8; margin-bottom:12px;">Mid-range site-built, all-in · no kitchen (coffee station only) · LVP flooring throughout — change sq ft to update all estimates</div>
+    <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      <input id="sqft-input" type="number" value="1000" min="200" max="5000" step="50"
+             style="width:100px; padding:8px 10px; border:none; border-radius:6px; font-size:1rem; font-family:system-ui,sans-serif; text-align:center; background:rgba(255,255,255,0.9); color:#1a1a1a;"
+             oninput="updateCosts()"/>
+      <span style="font-family:system-ui,sans-serif; font-size:0.85rem;">sq ft</span>
+      <span style="font-family:system-ui,sans-serif; font-size:0.85rem; opacity:0.6;">=</span>
+      <span id="sqft-result" style="font-family:system-ui,sans-serif; font-size:1.3rem; font-weight:700;">$872,000</span>
+    </div>
+  </div>
+
+  <!-- Finish tier popup -->
+  <div id="tier-popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+       background:white; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.25); padding:24px 28px;
+       max-width:420px; width:90%; z-index:1000; font-family:system-ui,sans-serif; font-size:0.9rem; color:#1a1a1a;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+      <h3 id="tier-title" style="margin:0; color:var(--teal-dk); font-size:1.1rem;"></h3>
+      <button onclick="document.getElementById('tier-popup').style.display='none';document.getElementById('tier-overlay').style.display='none';"
+              style="border:none; background:none; font-size:1.4rem; cursor:pointer; color:#888;">✕</button>
+    </div>
+    <div id="tier-body" style="line-height:1.7;"></div>
+  </div>
+  <div id="tier-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+       background:rgba(0,0,0,0.35); z-index:999;"
+       onclick="document.getElementById('tier-popup').style.display='none';this.style.display='none';"></div>
+
+  <script>
+  var tierData = {
+    low: {
+      title: 'Low — Builder Grade ($485/sq ft)',
+      body: '<strong>Coffee Station:</strong> Formica countertop, two thermofoil base cabinets, single-bowl stainless sink, no appliances (bring your own coffee maker/mini fridge)<br><br>' +
+            '<strong>Bathrooms:</strong> Fiberglass tub/shower combos, formica vanity tops, chrome fixtures, basic ceramic tile surround<br><br>' +
+            '<strong>Flooring:</strong> Luxury vinyl plank throughout (all rooms)<br><br>' +
+            '<strong>Windows/Doors:</strong> Minimum code impact-rated aluminum, white standard sliders, hollow-core interior doors<br><br>' +
+            '<strong>Exterior:</strong> Fiber cement lap siding (Hardie), basic paint palette, 5V metal roof<br><br>' +
+            '<strong>HVAC:</strong> Single-zone mini-split per floor, standard efficiency<br><br>' +
+            '<strong>Electrical/Plumbing:</strong> Code minimum fixtures, basic LED can lights, standard panel'
+    },
+    high: {
+      title: 'High — Custom Grade ($615/sq ft)',
+      body: '<strong>Coffee Station:</strong> Quartz or natural stone countertop, solid wood shaker cabinets (2–3) with soft-close, undermount composite sink, tile backsplash, under-counter beverage fridge<br><br>' +
+            '<strong>Bathrooms:</strong> Frameless glass shower enclosures, quartz vanity tops, brushed nickel/matte black fixtures, large-format porcelain tile, rain showerhead<br><br>' +
+            '<strong>Flooring:</strong> Luxury vinyl plank throughout (upgraded pattern/texture)<br><br>' +
+            '<strong>Windows/Doors:</strong> High-performance impact glass (PGT WinGuard or equiv), aluminum-clad frames, solid-core interior doors, 8-ft entry door<br><br>' +
+            '<strong>Exterior:</strong> Hardie board with accent stone/ipe, designer paint, standing-seam metal roof, cable railing on decks<br><br>' +
+            '<strong>HVAC:</strong> Multi-zone ducted mini-splits, high-efficiency, smart thermostat per floor<br><br>' +
+            '<strong>Electrical/Plumbing:</strong> LED recessed + pendant fixtures, pre-wired for solar, USB outlets throughout, tankless water heater, whole-house water filtration'
+    },
+    center: {
+      title: 'Center — Mid-Range ($550/sq ft)',
+      body: '<strong>Coffee Station:</strong> Quartz countertop, two painted wood cabinets with soft-close, stainless undermount sink, subway tile backsplash, counter space for coffee maker + mini fridge<br><br>' +
+            '<strong>Bathrooms:</strong> Semi-frameless glass shower, quartz vanity tops, brushed nickel fixtures, porcelain tile to ceiling, standard showerhead + handheld<br><br>' +
+            '<strong>Flooring:</strong> Luxury vinyl plank throughout (mid-grade, wood-look)<br><br>' +
+            '<strong>Windows/Doors:</strong> Impact-rated aluminum (CGI/PGT), white or bronze frames, solid-core interior doors, standard entry door<br><br>' +
+            '<strong>Exterior:</strong> Hardie lap siding, two-tone paint, 5V or standing-seam metal roof, aluminum railing on decks<br><br>' +
+            '<strong>HVAC:</strong> Multi-zone mini-splits, mid-efficiency, programmable thermostat<br><br>' +
+            '<strong>Electrical/Plumbing:</strong> Mix of recessed and surface fixtures, pre-wired for ceiling fans, standard panel with surge, tank water heater (50 gal)'
+    }
+  };
+
+  function showTier(tier) {
+    document.getElementById('tier-title').textContent = tierData[tier].title;
+    document.getElementById('tier-body').innerHTML = tierData[tier].body;
+    document.getElementById('tier-popup').style.display = 'block';
+    document.getElementById('tier-overlay').style.display = 'block';
+  }
+  </script>
+
   <table>
-    <tr><th>Cost Item</th><th>Low</th><th>High</th><th>Center</th></tr>
-    <tr><td>Construction — 1,000 sq ft @ mid-range ($500–$650/sq ft)</td><td>$500K</td><td>$650K</td><td>$575K</td></tr>
-    <tr><td>Architecture &amp; engineering (8–12%)</td><td>$40K</td><td>$78K</td><td>$59K</td></tr>
-    <tr><td>Pilings / deep foundation</td><td>$40K</td><td>$80K</td><td>$60K</td></tr>
-    <tr><td>Site work (utilities, drainage, sewer connection)</td><td>$25K</td><td>$60K</td><td>$43K</td></tr>
-    <tr><td>Permits &amp; impact fees</td><td>$15K</td><td>$35K</td><td>$25K</td></tr>
-    <tr><td>BPAS allocation costs</td><td>$5K</td><td>$20K</td><td>$13K</td></tr>
-    <tr><td>Rooftop deck (stairs, railing, waterproofing)</td><td>$15K</td><td>$35K</td><td>$25K</td></tr>
-    <tr><td>Landscaping &amp; hardscape</td><td>$20K</td><td>$50K</td><td>$35K</td></tr>
-    <tr><td>Contingency (10–15%)</td><td>$50K</td><td>$98K</td><td>$74K</td></tr>
-    <tr class="total"><td>TOTAL ALL-IN</td><td>$710K</td><td>$1.106M</td><td>~$909K</td></tr>
+    <tr>
+      <th>Cost Item</th>
+      <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('low')">Low ⓘ</th>
+      <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('high')">High ⓘ</th>
+      <th style="cursor:pointer; text-decoration:underline dotted;" onclick="showTier('center')">Center ⓘ</th>
+    </tr>
+    <tr><td id="c-con-label">Construction — <span class="cost-sqft">1,000</span> sq ft @ $485–$615/sq ft (no kitchen — coffee station only)</td><td id="c-con-lo">$485,000</td><td id="c-con-hi">$615,000</td><td id="c-con-mid">$550,000</td></tr>
+    <tr><td>Architecture &amp; engineering (8–12%)</td><td id="c-ae-lo">$40,000</td><td id="c-ae-hi">$78,000</td><td id="c-ae-mid">$59,000</td></tr>
+    <tr><td>Pilings / deep foundation</td><td id="c-pile-lo">$40,000</td><td id="c-pile-hi">$80,000</td><td id="c-pile-mid">$60,000</td></tr>
+    <tr><td>Site work (utilities, drainage, sewer)</td><td id="c-site-lo">$25,000</td><td id="c-site-hi">$60,000</td><td id="c-site-mid">$42,500</td></tr>
+    <tr><td>Permits &amp; impact fees</td><td id="c-perm-lo">$15,000</td><td id="c-perm-hi">$35,000</td><td id="c-perm-mid">$25,000</td></tr>
+    <tr><td>BPAS allocation costs</td><td id="c-bpas-lo">$5,000</td><td id="c-bpas-hi">$20,000</td><td id="c-bpas-mid">$12,500</td></tr>
+    <tr><td>Rooftop deck (stairs, railing, waterproofing)</td><td id="c-deck-lo">$15,000</td><td id="c-deck-hi">$35,000</td><td id="c-deck-mid">$25,000</td></tr>
+    <tr><td>Landscaping &amp; hardscape</td><td id="c-land-lo">$20,000</td><td id="c-land-hi">$50,000</td><td id="c-land-mid">$35,000</td></tr>
+    <tr><td>Contingency (10–15%)</td><td id="c-cont-lo">$50,000</td><td id="c-cont-hi">$98,000</td><td id="c-cont-mid">$74,000</td></tr>
+    <tr class="total"><td>TOTAL ALL-IN</td><td id="c-total-lo">$710,000</td><td id="c-total-hi">$1,106,000</td><td id="c-total-mid">$909,000</td></tr>
   </table>
 
   <h3>Budget Bands by Build Type</h3>
   <table>
     <tr><th>Type</th><th>Range</th></tr>
-    <tr><td>Value build (modular/panelized)</td><td>$530K–$720K</td></tr>
-    <tr><td>Mid-range site-built <em>(recommended)</em></td><td>$710K–$1.1M · center ~$909K</td></tr>
-    <tr><td>High-end custom</td><td>$900K–$1.25M</td></tr>
-    <tr><td>Architectural showcase</td><td>$1.2M+</td></tr>
+    <tr><td>Value build (basic finishes)</td><td id="c-band-value">$530,000–$720,000</td></tr>
+    <tr><td>Mid-range site-built <em>(recommended)</em></td><td id="c-band-mid">$710,000–$1,100,000</td></tr>
+    <tr><td>High-end custom</td><td id="c-band-high">$900,000–$1,250,000</td></tr>
+    <tr><td>Architectural showcase</td><td id="c-band-show">$1,200,000+</td></tr>
   </table>
+
+  <script>
+  function fmt(n) { return '$' + Math.round(n).toLocaleString(); }
+
+  function updateCosts() {
+    var sq = parseFloat(document.getElementById('sqft-input').value) || 1000;
+
+    // Hero result
+    // Update hero total — dynamically computed from actual total
+    // (set after totals calculated below)
+
+    // Construction: $485–$615/sqft (no kitchen, coffee station only)
+    var conLo = sq * 485, conHi = sq * 615, conMid = sq * 550;
+    document.getElementById('c-con-lo').textContent = fmt(conLo);
+    document.getElementById('c-con-hi').textContent = fmt(conHi);
+    document.getElementById('c-con-mid').textContent = fmt(conMid);
+    // Update label
+    document.querySelector('.cost-sqft').textContent = sq.toLocaleString();
+
+    // A&E: 8–12% of construction
+    var aeLo = conLo * 0.08, aeHi = conHi * 0.12, aeMid = conMid * 0.10;
+    document.getElementById('c-ae-lo').textContent = fmt(aeLo);
+    document.getElementById('c-ae-hi').textContent = fmt(aeHi);
+    document.getElementById('c-ae-mid').textContent = fmt(aeMid);
+
+    // Pilings: scales with footprint. Base 1000sqft = $40K–$80K, scale linearly
+    var s = sq / 1000;
+    var pileLo = 40000 * s, pileHi = 80000 * s, pileMid = 60000 * s;
+    document.getElementById('c-pile-lo').textContent = fmt(pileLo);
+    document.getElementById('c-pile-hi').textContent = fmt(pileHi);
+    document.getElementById('c-pile-mid').textContent = fmt(pileMid);
+
+    // Site work: partial scale (some fixed, some variable)
+    var siteLo = 15000 + 10000 * s, siteHi = 30000 + 30000 * s, siteMid = (15000 + 10000 * s + 30000 + 30000 * s) / 2;
+    document.getElementById('c-site-lo').textContent = fmt(siteLo);
+    document.getElementById('c-site-hi').textContent = fmt(siteHi);
+    document.getElementById('c-site-mid').textContent = fmt(siteMid);
+
+    // Permits: partial scale
+    var permLo = 10000 + 5000 * s, permHi = 20000 + 15000 * s, permMid = (10000 + 5000 * s + 20000 + 15000 * s) / 2;
+    document.getElementById('c-perm-lo').textContent = fmt(permLo);
+    document.getElementById('c-perm-hi').textContent = fmt(permHi);
+    document.getElementById('c-perm-mid').textContent = fmt(permMid);
+
+    // BPAS: mostly fixed
+    var bpasLo = 5000, bpasHi = 20000, bpasMid = 12500;
+    document.getElementById('c-bpas-lo').textContent = fmt(bpasLo);
+    document.getElementById('c-bpas-hi').textContent = fmt(bpasHi);
+    document.getElementById('c-bpas-mid').textContent = fmt(bpasMid);
+
+    // Rooftop deck: scales moderately
+    var deckLo = 10000 + 5000 * s, deckHi = 20000 + 15000 * s, deckMid = (10000 + 5000 * s + 20000 + 15000 * s) / 2;
+    document.getElementById('c-deck-lo').textContent = fmt(deckLo);
+    document.getElementById('c-deck-hi').textContent = fmt(deckHi);
+    document.getElementById('c-deck-mid').textContent = fmt(deckMid);
+
+    // Landscaping: partial scale
+    var landLo = 15000 + 5000 * s, landHi = 30000 + 20000 * s, landMid = (15000 + 5000 * s + 30000 + 20000 * s) / 2;
+    document.getElementById('c-land-lo').textContent = fmt(landLo);
+    document.getElementById('c-land-hi').textContent = fmt(landHi);
+    document.getElementById('c-land-mid').textContent = fmt(landMid);
+
+    // Sum before contingency
+    var sumLo = conLo + aeLo + pileLo + siteLo + permLo + bpasLo + deckLo + landLo;
+    var sumHi = conHi + aeHi + pileHi + siteHi + permHi + bpasHi + deckHi + landHi;
+    var sumMid = conMid + aeMid + pileMid + siteMid + permMid + bpasMid + deckMid + landMid;
+
+    // Contingency: 10% low, 15% high, 12.5% mid
+    var contLo = sumLo * 0.10, contHi = sumHi * 0.15, contMid = sumMid * 0.125;
+    document.getElementById('c-cont-lo').textContent = fmt(contLo);
+    document.getElementById('c-cont-hi').textContent = fmt(contHi);
+    document.getElementById('c-cont-mid').textContent = fmt(contMid);
+
+    // Totals
+    var totalLo = sumLo + contLo, totalHi = sumHi + contHi, totalMid = sumMid + contMid;
+    document.getElementById('c-total-lo').textContent = fmt(totalLo);
+    document.getElementById('c-total-hi').textContent = fmt(totalHi);
+    document.getElementById('c-total-mid').textContent = fmt(totalMid);
+
+    // Hero result shows center total
+    document.getElementById('sqft-result').textContent = fmt(totalMid);
+
+    // Budget bands (scale from 1000 sqft baseline)
+    document.getElementById('c-band-value').textContent = fmt(530000 * s) + '–' + fmt(720000 * s);
+    document.getElementById('c-band-mid').textContent = fmt(totalLo) + '–' + fmt(totalHi);
+    document.getElementById('c-band-high').textContent = fmt(900000 * s) + '–' + fmt(1250000 * s);
+    document.getElementById('c-band-show').textContent = fmt(1200000 * s) + '+';
+
+    // Also update the tax estimator assessed value to match
+    document.getElementById('tax-value').value = Math.round(totalMid);
+    updateTaxes();
+  }
+  </script>
 </section>
 
 <!-- ══ COST-SAVING LEVERS ════════════════════════════════════════════════════ -->
@@ -1056,42 +1158,64 @@
   <h3>Detached but Connected via Covered Walkway</h3>
   <p>Physical attachment to the main house may reclassify the casita as an addition, triggering different code requirements and consuming square footage allowances. A covered breezeway (4–6 ft wide) provides weather-protected access, can incorporate lighting and a ceiling fan, and reads architecturally as a connective element. Cost: $200–$350/linear foot — typically $8,000–$20,000 total.</p>
 
-  <h3>Modular / Prefab Shell</h3>
-  <p>Factory-built panels from Deltec or Topsider can save 20–30% versus pure site-built. They also reduce schedule risk — the single biggest variable cost in Keys construction is contractor availability. See manufacturer profiles below.</p>
+
 </section>
 
-<!-- ══ MODULAR OPTIONS ═══════════════════════════════════════════════════════ -->
+<!-- ══ TAX ESTIMATOR ═══════════════════════════════════════════════════════ -->
 <section>
-  <h2>Modular &amp; Prefab Options</h2>
-  <p>All three manufacturers meet Florida's 180 mph wind design requirement. Factory assembly addresses the two biggest Keys cost drivers: labor scarcity and weather delays.</p>
+  <h2>Property Tax Estimator — Marathon, FL</h2>
+  <p>Estimated annual property taxes for a new casita based on Marathon / Monroe County 2024–2025 millage rates. Enter the assessed value to see the tax breakdown.</p>
 
-  <div class="mfr-grid">
-
-    <div class="mfr-card">
-      <img src="https://deltechomes.com/wp-content/uploads/2024/02/6-P-1-St-George-1-1.jpg"
-           alt="Deltec elevated coastal home — hurricane-rated panelized construction"
-           loading="lazy" />
-      <div class="mfr-body">
-        <h3>Deltec Homes</h3>
-        <p>Round panelized homes engineered as wind-deflection systems — no flat face for winds to push against. All 26 Deltecs on Black's Island Florida survived Hurricane Michael. Hurricane Ready models rated to 190 mph. Factory panels arrive on a truck and assemble in days.</p>
-        <p class="mfr-cost">Est. 1,000 sq ft elevated two-story: <strong>$620K–$820K all-in</strong></p>
-        <a class="mfr-link" href="https://deltechomes.com/hurricane/" target="_blank" rel="noopener">deltechomes.com →</a>
-      </div>
+  <div style="background:white; border-radius:10px; padding:20px 24px; box-shadow:0 2px 8px rgba(0,0,0,0.07); margin-bottom:20px;">
+    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+      <label for="tax-value" style="font-family:system-ui,sans-serif; font-size:0.9rem; font-weight:600;">Assessed Value: $</label>
+      <input id="tax-value" type="number" value="909000" min="100000" max="5000000" step="10000"
+             style="width:140px; padding:8px 10px; border:2px solid var(--teal); border-radius:6px; font-size:1rem; font-family:system-ui,sans-serif; text-align:right;"
+             oninput="updateTaxes()"/>
     </div>
 
-    <div class="mfr-card">
-      <img src="https://st.hzcdn.com/simgs/93618d840aec7094_9-4561/home-design.jpg"
-           alt="Topsider elevated pedestal home — Florida Keys, survived Hurricane Irma"
-           loading="lazy" />
-      <div class="mfr-body">
-        <h3>Topsider Homes</h3>
-        <p>Invented the pedestal home in 1968. Built throughout the Florida Keys from Key Largo to Key West. Their post-and-beam system is designed for piling elevation — exactly what's required at 265 Ave G. A Topsider Keys home survived Hurricane Irma intact.</p>
-        <p class="mfr-cost">Est. 1,000 sq ft elevated two-story: <strong>$640K–$850K all-in</strong></p>
-        <a class="mfr-link" href="https://www.topsiderhomes.com/piling-pier-stilt-house-hurricane-home-plans.php" target="_blank" rel="noopener">topsiderhomes.com →</a>
-      </div>
-    </div>
+    <table id="tax-table">
+      <tr><th>Taxing Authority</th><th>Millage Rate</th><th>Annual Tax</th></tr>
+      <tr><td>City of Marathon</td><td>2.2235</td><td id="tax-city">$2,021</td></tr>
+      <tr><td>Monroe County — General</td><td>2.6929</td><td id="tax-county">$2,448</td></tr>
+      <tr><td>Monroe County School Board</td><td>3.6480</td><td id="tax-school">$3,316</td></tr>
+      <tr><td>South FL Water Mgmt District</td><td>0.2894</td><td id="tax-sfwmd">$263</td></tr>
+      <tr><td>FL Inland Navigation District</td><td>0.0345</td><td id="tax-find">$31</td></tr>
+      <tr><td>Monroe County — Debt Service</td><td>0.1584</td><td id="tax-debt">$144</td></tr>
+      <tr><td>FL Keys Mosquito Control</td><td>0.4840</td><td id="tax-mosquito">$440</td></tr>
+      <tr><td>Key Largo Fire &amp; EMS</td><td>0.0000</td><td id="tax-fire">$0</td></tr>
+      <tr class="total"><td>TOTAL</td><td id="tax-total-mill">9.5307</td><td id="tax-total">$8,663</td></tr>
+    </table>
 
+    <div class="callout" style="margin-top:16px;">
+      <strong>Effective rate: <span id="tax-pct">0.95%</span> of assessed value</strong>
+      This estimate does not include homestead exemption (not available for a casita/ADU unless it becomes your primary residence). Non-homesteaded properties pay on the full assessed value. Millage rates are based on 2024 final rates and may change annually.
+    </div>
   </div>
+
+  <script>
+  function updateTaxes() {
+    const v = parseFloat(document.getElementById('tax-value').value) || 0;
+    const rates = [
+      {id:'tax-city', mill:2.2235},
+      {id:'tax-county', mill:2.6929},
+      {id:'tax-school', mill:3.6480},
+      {id:'tax-sfwmd', mill:0.2894},
+      {id:'tax-find', mill:0.0345},
+      {id:'tax-debt', mill:0.1584},
+      {id:'tax-mosquito', mill:0.4840},
+      {id:'tax-fire', mill:0.0000}
+    ];
+    let total = 0;
+    rates.forEach(r => {
+      const tax = v * r.mill / 1000;
+      total += tax;
+      document.getElementById(r.id).textContent = '$' + Math.round(tax).toLocaleString();
+    });
+    document.getElementById('tax-total').textContent = '$' + Math.round(total).toLocaleString();
+    document.getElementById('tax-pct').textContent = (total / v * 100).toFixed(2) + '%';
+  }
+  </script>
 </section>
 
 <!-- ══ ARCHITECTURAL CONCEPTS ═══════════════════════════════════════════════ -->
@@ -1801,6 +1925,246 @@
 
 
 
+<!-- ══ FLOOR PLANS ═══════════════════════════════════════════════════════════ -->
+<section>
+  <h2>Floor Plan Ideas</h2>
+  <p>Three layout options for a two-story 1,000 sq ft casita (500 sq ft per floor) on a 20 × 50 ft footprint. No kitchen — coffee station only. Ground level below is unconditioned garage/storage on pilings (not shown). All plans include rooftop deck access via interior stairs.</p>
+
+  <div class="concept-grid">
+
+    <!-- PLAN A -->
+    <div class="concept-card">
+      <div class="card-header">
+        <h3>Plan A — Open Living + Private Suite</h3>
+        <div class="tag">Best for: guests &amp; entertaining</div>
+      </div>
+      <div class="card-body">
+        <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin-bottom:12px;">
+          <!-- FIRST FLOOR -->
+          <text x="200" y="18" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="700" fill="#1d5c5c">1ST FLOOR — 500 sq ft</text>
+          <!-- Outer walls -->
+          <rect x="20" y="28" width="360" height="200" fill="#f8f5f0" stroke="#333" stroke-width="3"/>
+          <!-- Living/dining — large open area -->
+          <rect x="20" y="28" width="240" height="200" fill="#f0ebe0" stroke="#333" stroke-width="1.5"/>
+          <text x="140" y="115" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#333">LIVING / DINING</text>
+          <text x="140" y="132" text-anchor="middle" font-size="10" font-family="system-ui" fill="#666">~300 sq ft</text>
+          <!-- Coffee station -->
+          <rect x="225" y="32" width="32" height="12" fill="#d4a060" stroke="#999" stroke-width="1"/>
+          <text x="241" y="55" text-anchor="middle" font-size="7" font-family="system-ui" fill="#888">coffee</text>
+          <!-- Half bath -->
+          <rect x="260" y="28" width="120" height="80" fill="#d8ecf0" stroke="#333" stroke-width="1.5"/>
+          <text x="320" y="65" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">HALF BATH</text>
+          <ellipse cx="300" cy="80" rx="10" ry="7" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <rect x="330" y="65" width="12" height="18" rx="2" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <!-- Stairs -->
+          <rect x="260" y="108" width="120" height="60" fill="#e8e0d0" stroke="#333" stroke-width="1.5"/>
+          <line x1="270" y1="118" x2="370" y2="118" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="270" y1="128" x2="370" y2="128" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="270" y1="138" x2="370" y2="138" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="270" y1="148" x2="370" y2="148" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="270" y1="158" x2="370" y2="158" stroke="#bbb" stroke-width="0.8"/>
+          <text x="320" y="140" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">STAIRS UP</text>
+          <text x="320" y="152" text-anchor="middle" font-size="7" font-family="system-ui" fill="#aaa">+ roof access</text>
+          <!-- Lanai / porch -->
+          <rect x="260" y="168" width="120" height="60" fill="#d5e5c5" stroke="#333" stroke-width="1.5"/>
+          <text x="320" y="200" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">COVERED</text>
+          <text x="320" y="214" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">LANAI</text>
+          <!-- Entry door -->
+          <rect x="100" y="222" width="30" height="6" fill="#8B5A2B" rx="1"/>
+          <text x="115" y="238" text-anchor="middle" font-size="7" font-family="system-ui" fill="#888">entry</text>
+
+          <!-- SECOND FLOOR -->
+          <text x="200" y="278" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="700" fill="#1d5c5c">2ND FLOOR — 500 sq ft</text>
+          <rect x="20" y="288" width="360" height="200" fill="#f8f5f0" stroke="#333" stroke-width="3"/>
+          <!-- Master bedroom -->
+          <rect x="20" y="288" width="220" height="200" fill="#e8e0f0" stroke="#333" stroke-width="1.5"/>
+          <text x="130" y="378" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#333">PRIMARY BEDROOM</text>
+          <text x="130" y="395" text-anchor="middle" font-size="10" font-family="system-ui" fill="#666">~280 sq ft</text>
+          <!-- Walk-in closet -->
+          <rect x="24" y="292" width="80" height="50" fill="#f0e8d8" stroke="#999" stroke-width="1"/>
+          <text x="64" y="320" text-anchor="middle" font-size="8" font-family="system-ui" fill="#888">CLOSET</text>
+          <!-- Full bath -->
+          <rect x="240" y="288" width="140" height="110" fill="#d8ecf0" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="335" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">FULL BATH</text>
+          <rect x="255" y="295" width="40" height="22" rx="3" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <text x="275" y="310" text-anchor="middle" font-size="6" font-family="system-ui" fill="#999">tub</text>
+          <ellipse cx="330" cy="310" rx="10" ry="7" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <rect x="350" y="295" width="12" height="18" rx="2" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <!-- Stairs -->
+          <rect x="240" y="398" width="140" height="50" fill="#e8e0d0" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="427" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">STAIRS</text>
+          <!-- Balcony -->
+          <rect x="240" y="448" width="140" height="40" fill="#d5e5c5" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="472" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">BALCONY</text>
+        </svg>
+        <ul>
+          <li>Open first floor for living + entertaining</li>
+          <li>Entire second floor is a private suite</li>
+          <li>Walk-in closet + full bath upstairs</li>
+          <li>Covered lanai off living area</li>
+          <li>1 BR / 1.5 BA</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PLAN B -->
+    <div class="concept-card">
+      <div class="card-header">
+        <h3>Plan B — Two Bedrooms</h3>
+        <div class="tag">Best for: family &amp; rental flexibility</div>
+      </div>
+      <div class="card-body">
+        <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin-bottom:12px;">
+          <!-- FIRST FLOOR -->
+          <text x="200" y="18" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="700" fill="#1d5c5c">1ST FLOOR — 500 sq ft</text>
+          <rect x="20" y="28" width="360" height="200" fill="#f8f5f0" stroke="#333" stroke-width="3"/>
+          <!-- Living area -->
+          <rect x="20" y="28" width="200" height="130" fill="#f0ebe0" stroke="#333" stroke-width="1.5"/>
+          <text x="120" y="90" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#333">LIVING</text>
+          <text x="120" y="107" text-anchor="middle" font-size="10" font-family="system-ui" fill="#666">~200 sq ft</text>
+          <!-- Coffee station -->
+          <rect x="185" y="32" width="32" height="12" fill="#d4a060" stroke="#999" stroke-width="1"/>
+          <text x="201" y="55" text-anchor="middle" font-size="7" font-family="system-ui" fill="#888">coffee</text>
+          <!-- Bedroom 1 -->
+          <rect x="20" y="158" width="200" height="70" fill="#e8e0f0" stroke="#333" stroke-width="1.5"/>
+          <text x="120" y="198" text-anchor="middle" font-size="11" font-family="system-ui" font-weight="600" fill="#333">BEDROOM 1</text>
+          <!-- Full bath -->
+          <rect x="220" y="28" width="160" height="90" fill="#d8ecf0" stroke="#333" stroke-width="1.5"/>
+          <text x="300" y="70" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">FULL BATH</text>
+          <rect x="235" y="40" width="35" height="20" rx="3" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <ellipse cx="310" cy="55" rx="10" ry="7" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <rect x="345" y="40" width="12" height="18" rx="2" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <!-- Stairs -->
+          <rect x="220" y="118" width="160" height="55" fill="#e8e0d0" stroke="#333" stroke-width="1.5"/>
+          <line x1="230" y1="128" x2="370" y2="128" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="230" y1="138" x2="370" y2="138" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="230" y1="148" x2="370" y2="148" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="230" y1="158" x2="370" y2="158" stroke="#bbb" stroke-width="0.8"/>
+          <text x="300" y="145" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">STAIRS UP</text>
+          <!-- Porch -->
+          <rect x="220" y="173" width="160" height="55" fill="#d5e5c5" stroke="#333" stroke-width="1.5"/>
+          <text x="300" y="204" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">PORCH</text>
+          <!-- Entry -->
+          <rect x="90" y="222" width="30" height="6" fill="#8B5A2B" rx="1"/>
+          <text x="105" y="238" text-anchor="middle" font-size="7" font-family="system-ui" fill="#888">entry</text>
+
+          <!-- SECOND FLOOR -->
+          <text x="200" y="278" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="700" fill="#1d5c5c">2ND FLOOR — 500 sq ft</text>
+          <rect x="20" y="288" width="360" height="200" fill="#f8f5f0" stroke="#333" stroke-width="3"/>
+          <!-- Bedroom 2 -->
+          <rect x="20" y="288" width="220" height="200" fill="#e8e0f0" stroke="#333" stroke-width="1.5"/>
+          <text x="130" y="380" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#333">BEDROOM 2</text>
+          <text x="130" y="397" text-anchor="middle" font-size="10" font-family="system-ui" fill="#666">~280 sq ft</text>
+          <!-- Closet -->
+          <rect x="24" y="292" width="70" height="45" fill="#f0e8d8" stroke="#999" stroke-width="1"/>
+          <text x="59" y="318" text-anchor="middle" font-size="8" font-family="system-ui" fill="#888">CLOSET</text>
+          <!-- Full bath 2 -->
+          <rect x="240" y="288" width="140" height="90" fill="#d8ecf0" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="330" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">FULL BATH</text>
+          <rect x="255" y="295" width="35" height="20" rx="3" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <ellipse cx="325" cy="310" rx="10" ry="7" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <!-- Stairs -->
+          <rect x="240" y="378" width="140" height="50" fill="#e8e0d0" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="407" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">STAIRS</text>
+          <!-- Balcony -->
+          <rect x="240" y="428" width="140" height="60" fill="#d5e5c5" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="462" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">BALCONY</text>
+        </svg>
+        <ul>
+          <li>Bedroom on each floor — independent suites</li>
+          <li>Full bath on each floor</li>
+          <li>Living + coffee station on first floor</li>
+          <li>Covered porch down, balcony up</li>
+          <li>2 BR / 2 BA (max ADU bedrooms)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PLAN C -->
+    <div class="concept-card">
+      <div class="card-header">
+        <h3>Plan C — Loft Studio</h3>
+        <div class="tag">Best for: home office &amp; creative space</div>
+      </div>
+      <div class="card-body">
+        <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin-bottom:12px;">
+          <!-- FIRST FLOOR -->
+          <text x="200" y="18" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="700" fill="#1d5c5c">1ST FLOOR — 500 sq ft</text>
+          <rect x="20" y="28" width="360" height="200" fill="#f8f5f0" stroke="#333" stroke-width="3"/>
+          <!-- Bedroom -->
+          <rect x="20" y="28" width="180" height="140" fill="#e8e0f0" stroke="#333" stroke-width="1.5"/>
+          <text x="110" y="95" text-anchor="middle" font-size="12" font-family="system-ui" font-weight="600" fill="#333">BEDROOM</text>
+          <text x="110" y="112" text-anchor="middle" font-size="10" font-family="system-ui" fill="#666">~180 sq ft</text>
+          <!-- Closet -->
+          <rect x="24" y="32" width="60" height="40" fill="#f0e8d8" stroke="#999" stroke-width="1"/>
+          <text x="54" y="55" text-anchor="middle" font-size="8" font-family="system-ui" fill="#888">CLOSET</text>
+          <!-- Full bath -->
+          <rect x="200" y="28" width="180" height="90" fill="#d8ecf0" stroke="#333" stroke-width="1.5"/>
+          <text x="290" y="68" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">FULL BATH</text>
+          <rect x="215" y="38" width="40" height="22" rx="3" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <text x="235" y="53" text-anchor="middle" font-size="6" font-family="system-ui" fill="#999">shower</text>
+          <ellipse cx="295" cy="55" rx="10" ry="7" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <rect x="340" y="42" width="12" height="18" rx="2" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <!-- Coffee + laundry nook -->
+          <rect x="20" y="168" width="180" height="60" fill="#f0ebe0" stroke="#333" stroke-width="1.5"/>
+          <rect x="30" y="172" width="32" height="12" fill="#d4a060" stroke="#999" stroke-width="1"/>
+          <text x="110" y="200" text-anchor="middle" font-size="9" font-family="system-ui" fill="#666">COFFEE + LAUNDRY</text>
+          <!-- Stairs -->
+          <rect x="200" y="118" width="180" height="55" fill="#e8e0d0" stroke="#333" stroke-width="1.5"/>
+          <line x1="210" y1="128" x2="370" y2="128" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="210" y1="138" x2="370" y2="138" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="210" y1="148" x2="370" y2="148" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="210" y1="158" x2="370" y2="158" stroke="#bbb" stroke-width="0.8"/>
+          <text x="290" y="145" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">STAIRS UP</text>
+          <!-- Covered entry -->
+          <rect x="200" y="173" width="180" height="55" fill="#d5e5c5" stroke="#333" stroke-width="1.5"/>
+          <text x="290" y="204" text-anchor="middle" font-size="10" font-family="system-ui" font-weight="600" fill="#333">COVERED ENTRY</text>
+          <!-- Entry door -->
+          <rect x="265" y="222" width="30" height="6" fill="#8B5A2B" rx="1"/>
+
+          <!-- SECOND FLOOR -->
+          <text x="200" y="278" text-anchor="middle" font-size="13" font-family="system-ui" font-weight="700" fill="#1d5c5c">2ND FLOOR — 500 sq ft</text>
+          <rect x="20" y="288" width="360" height="200" fill="#f8f5f0" stroke="#333" stroke-width="3"/>
+          <!-- Open loft / office -->
+          <rect x="20" y="288" width="360" height="130" fill="#f5f0e0" stroke="#333" stroke-width="1.5"/>
+          <text x="200" y="345" text-anchor="middle" font-size="14" font-family="system-ui" font-weight="600" fill="#333">OPEN LOFT / STUDIO</text>
+          <text x="200" y="365" text-anchor="middle" font-size="10" font-family="system-ui" fill="#666">~350 sq ft — office, workshop, media room</text>
+          <!-- Desk area indicated -->
+          <rect x="30" y="295" width="60" height="25" fill="#e0d8c8" stroke="#999" stroke-width="0.8"/>
+          <text x="60" y="311" text-anchor="middle" font-size="7" font-family="system-ui" fill="#888">desk</text>
+          <rect x="300" y="295" width="60" height="25" fill="#e0d8c8" stroke="#999" stroke-width="0.8"/>
+          <text x="330" y="311" text-anchor="middle" font-size="7" font-family="system-ui" fill="#888">desk</text>
+          <!-- Half bath -->
+          <rect x="20" y="418" width="100" height="70" fill="#d8ecf0" stroke="#333" stroke-width="1.5"/>
+          <text x="70" y="455" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">HALF BATH</text>
+          <ellipse cx="50" cy="440" rx="8" ry="6" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <rect x="75" y="432" width="10" height="15" rx="2" fill="#b0d8e8" stroke="#999" stroke-width="0.8"/>
+          <!-- Stairs -->
+          <rect x="120" y="418" width="120" height="70" fill="#e8e0d0" stroke="#333" stroke-width="1.5"/>
+          <text x="180" y="457" text-anchor="middle" font-size="9" font-family="system-ui" fill="#888">STAIRS</text>
+          <!-- Wraparound deck -->
+          <rect x="240" y="418" width="140" height="70" fill="#d5e5c5" stroke="#333" stroke-width="1.5"/>
+          <text x="310" y="450" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">WRAP</text>
+          <text x="310" y="464" text-anchor="middle" font-size="9" font-family="system-ui" font-weight="600" fill="#333">DECK</text>
+        </svg>
+        <ul>
+          <li>Bedroom + bath + laundry on first floor</li>
+          <li>Entire second floor is open loft workspace</li>
+          <li>350 sq ft uninterrupted studio space</li>
+          <li>Half bath upstairs for work hours</li>
+          <li>1 BR / 1.5 BA + office</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="callout" style="margin-top:20px;">
+    <strong>All plans include</strong>
+    Ground-level garage/storage on pilings (unconditioned, not counted in 1,000 sq ft). Interior stairs to rooftop deck. LVP flooring throughout. Coffee station with sink, countertop, and 2–3 cabinets — no full kitchen. Impact-rated windows and doors on all levels. Mini-split HVAC per floor.
+  </div>
+</section>
+
 <!-- ══ SITE PLACEMENT ════════════════════════════════════════════════════════ -->
 <section>
   <h2>Site Placement</h2>
@@ -1851,12 +2215,6 @@
       <div class="step-text">
         <strong>Interview 2–3 Marathon-local GCs and 2 architects</strong>
         Architects with BPAS scoring experience are especially valuable — design choices affect your point score and wait time.
-      </div>
-    </li>
-    <li>
-      <div class="step-text">
-        <strong>Decide: modular shell or full site-built?</strong>
-        Request quotes from Deltec and Topsider alongside local GCs. Modular can save 20–30% and 6–8 weeks.
       </div>
     </li>
     <li>
@@ -1980,16 +2338,6 @@
     <div class="url-card">
       <div class="url-label">Florida Building Code 8th Ed.</div>
       <a href="https://floridabuilding.org/c/default.aspx" target="_blank" rel="noopener">floridabuilding.org</a>
-    </div>
-
-    <div class="url-card">
-      <div class="url-label">Deltec Homes — Hurricane-Rated Prefab</div>
-      <a href="https://deltechomes.com/hurricane/" target="_blank" rel="noopener">deltechomes.com/hurricane</a>
-    </div>
-
-    <div class="url-card">
-      <div class="url-label">Topsider Homes — Florida Keys</div>
-      <a href="https://www.topsiderhomes.com/beach-front-coastal-stilt-home-building.php" target="_blank" rel="noopener">topsiderhomes.com</a>
     </div>
 
     <div class="url-card">
