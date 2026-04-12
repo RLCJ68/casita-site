@@ -274,6 +274,10 @@
       .concept-grid { grid-template-columns: 1fr; }
       .mfr-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── CONCEPT VISUAL ── */
+    .concept-visual { background: #e0eff7; overflow: hidden; }
+    .concept-visual svg { display: block; width: 100%; height: auto; }
   </style>
 </head>
 <body>
@@ -407,7 +411,7 @@
     <tr><td>Construction — 1,000 sq ft @ mid-range ($500–$650/sq ft)</td><td>$500K</td><td>$650K</td><td>$575K</td></tr>
     <tr><td>Architecture &amp; engineering (8–12%)</td><td>$40K</td><td>$78K</td><td>$59K</td></tr>
     <tr><td>Pilings / deep foundation</td><td>$40K</td><td>$80K</td><td>$60K</td></tr>
-    <tr><td>Site work (utilities, drainage, septic)</td><td>$25K</td><td>$60K</td><td>$43K</td></tr>
+    <tr><td>Site work (utilities, drainage, sewer connection)</td><td>$25K</td><td>$60K</td><td>$43K</td></tr>
     <tr><td>Permits &amp; impact fees</td><td>$15K</td><td>$35K</td><td>$25K</td></tr>
     <tr><td>BPAS allocation costs</td><td>$5K</td><td>$20K</td><td>$13K</td></tr>
     <tr><td>Rooftop deck (stairs, railing, waterproofing)</td><td>$15K</td><td>$35K</td><td>$25K</td></tr>
@@ -437,7 +441,7 @@
   <p>Marathon's prevailing winds are from the southeast. Orienting the long axis east-west captures natural ventilation and minimizes western sun exposure — reducing cooling load by an estimated 15–20%. A 1,000 sq ft two-story building oriented correctly can be cooled with a single 2.5-ton mini-split per floor. Poor orientation can require 3–4 tons per floor. In Keys construction, HVAC sizing also affects energy compliance scoring, which matters for BPAS points.</p>
 
   <h3>Share Utilities with the Main House</h3>
-  <p>Monroe County and Marathon charge per-connection impact fees for new dwelling units — water and sewer fees alone can run $8,000–$18,000 per unit. A shared connection to the existing main house service avoids a second set of fees entirely, provided existing capacity is sufficient. A second dwelling unit adds approximately 150–200 gallons/day. If the existing septic is at capacity, an upgrade adds $8,000–$25,000. Verify capacity before finalizing the utility approach.</p>
+  <p>Monroe County and Marathon charge per-connection impact fees for new dwelling units — water and sewer fees alone can run $8,000–$18,000 per unit. The property is on municipal sewer (not septic), which eliminates the risk of a costly septic expansion. A shared sewer connection to the existing main house service avoids a second set of impact fees entirely. A second dwelling unit adds approximately 150–200 gallons/day — confirm with the city that the existing service line and meter can handle the added load.</p>
 
   <h3>Detached but Connected via Covered Walkway</h3>
   <p>Physical attachment to the main house may reclassify the casita as an addition, triggering different code requirements and consuming square footage allowances. A covered breezeway (4–6 ft wide) provides weather-protected access, can incorporate lighting and a ceiling fan, and reads architecturally as a connective element. Cost: $200–$350/linear foot — typically $8,000–$20,000 total.</p>
@@ -504,6 +508,70 @@
         <h3>Concept A — Elevated Keys Cottage</h3>
         <div class="tag">Timeless · Resale-Friendly · Neighborhood Fit</div>
       </div>
+      <!-- CONCEPT A ILLUSTRATION -->
+      <div class="concept-visual">
+        <svg viewBox="0 0 440 170" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky-a" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7ec8e3"/><stop offset="100%" stop-color="#c8e8f5"/>
+            </linearGradient>
+          </defs>
+          <!-- Sky -->
+          <rect width="440" height="170" fill="url(#sky-a)"/>
+          <!-- Sun -->
+          <circle cx="380" cy="28" r="16" fill="#f7d070" opacity="0.85"/>
+          <!-- Ground -->
+          <rect x="0" y="138" width="440" height="32" fill="#c4a050"/>
+          <!-- Pilings (4) -->
+          <rect x="118" y="118" width="9" height="22" fill="#7a5020" rx="1"/>
+          <rect x="158" y="118" width="9" height="22" fill="#7a5020" rx="1"/>
+          <rect x="258" y="118" width="9" height="22" fill="#7a5020" rx="1"/>
+          <rect x="298" y="118" width="9" height="22" fill="#7a5020" rx="1"/>
+          <!-- Platform -->
+          <rect x="112" y="113" width="201" height="7" fill="#d4c090" rx="2"/>
+          <!-- Ground floor open area -->
+          <rect x="118" y="113" width="189" height="5" fill="none"/>
+          <!-- Wraparound porch / first floor base -->
+          <rect x="105" y="75" width="215" height="40" fill="#f2f2ed"/>
+          <!-- Porch roof -->
+          <rect x="100" y="72" width="225" height="5" fill="#c8c8c0" rx="1"/>
+          <!-- Windows floor 1 with shutters -->
+          <rect x="122" y="84" width="22" height="17" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="118" y="84" width="4" height="17" fill="#2a7f7f" rx="1"/>
+          <rect x="144" y="84" width="4" height="17" fill="#2a7f7f" rx="1"/>
+          <rect x="295" y="84" width="22" height="17" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="291" y="84" width="4" height="17" fill="#2a7f7f" rx="1"/>
+          <rect x="317" y="84" width="4" height="17" fill="#2a7f7f" rx="1"/>
+          <!-- Door -->
+          <rect x="194" y="87" width="28" height="28" fill="#b89060" stroke="#999" stroke-width="0.8" rx="1"/>
+          <circle cx="219" cy="103" r="2" fill="#888"/>
+          <!-- Second floor walls -->
+          <rect x="120" y="40" width="185" height="36" fill="#f2f2ed"/>
+          <!-- Second floor porch overhang -->
+          <rect x="112" y="37" width="201" height="5" fill="#c8c8c0" rx="1"/>
+          <!-- Windows floor 2 with shutters -->
+          <rect x="140" y="48" width="22" height="16" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="136" y="48" width="4" height="16" fill="#2a7f7f" rx="1"/>
+          <rect x="162" y="48" width="4" height="16" fill="#2a7f7f" rx="1"/>
+          <rect x="263" y="48" width="22" height="16" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="259" y="48" width="4" height="16" fill="#2a7f7f" rx="1"/>
+          <rect x="285" y="48" width="4" height="16" fill="#2a7f7f" rx="1"/>
+          <!-- Metal gable roof -->
+          <polygon points="108,40 218,6 332,40" fill="#5a6070"/>
+          <polygon points="108,40 218,6 332,40" fill="none" stroke="#4a5060" stroke-width="0.5"/>
+          <!-- Standing seam lines on roof -->
+          <line x1="163" y1="40" x2="190" y2="9" stroke="#4a5060" stroke-width="0.5" opacity="0.5"/>
+          <line x1="218" y1="40" x2="218" y2="7" stroke="#4a5060" stroke-width="0.5" opacity="0.5"/>
+          <line x1="273" y1="40" x2="246" y2="9" stroke="#4a5060" stroke-width="0.5" opacity="0.5"/>
+          <!-- Widow's walk on ridge -->
+          <rect x="204" y="1" width="28" height="7" fill="#f0f0ea"/>
+          <line x1="204" y1="0" x2="204" y2="8" stroke="#888" stroke-width="1"/>
+          <line x1="232" y1="0" x2="232" y2="8" stroke="#888" stroke-width="1"/>
+          <line x1="202" y1="0" x2="234" y2="0" stroke="#888" stroke-width="1.2"/>
+          <!-- Label -->
+          <text x="220" y="158" text-anchor="middle" font-size="9.5" font-family="Georgia,serif" fill="#5a4010" font-style="italic">Keys Cottage · gable roof · Bahama shutters · wraparound porch · rooftop widow's walk</text>
+        </svg>
+      </div>
       <div class="card-body">
         <p>Classic Florida Keys vernacular, two-story. Ground level: open parking, storage, outdoor shower on pilings. First floor (500 sq ft): open living/kitchen/dining. Second floor (500 sq ft): bedrooms and bath.</p>
         <ul>
@@ -521,6 +589,68 @@
         <h3>Concept B — Modern Cabana Studio</h3>
         <div class="tag">Contemporary · Pool-Anchor · Rental-Friendly</div>
       </div>
+      <!-- CONCEPT B ILLUSTRATION -->
+      <div class="concept-visual">
+        <svg viewBox="0 0 440 170" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky-b" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7ec8e3"/><stop offset="100%" stop-color="#c8e8f5"/>
+            </linearGradient>
+            <linearGradient id="glass-b" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#a8d8f8" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#d0eef8" stop-opacity="0.7"/>
+            </linearGradient>
+          </defs>
+          <!-- Sky -->
+          <rect width="440" height="170" fill="url(#sky-b)"/>
+          <!-- Sun -->
+          <circle cx="60" cy="28" r="14" fill="#f7d070" opacity="0.85"/>
+          <!-- Ground -->
+          <rect x="0" y="138" width="440" height="32" fill="#c4a050"/>
+          <!-- Slim modern pilings -->
+          <rect x="128" y="110" width="7" height="30" fill="#909090"/>
+          <rect x="168" y="110" width="7" height="30" fill="#909090"/>
+          <rect x="258" y="110" width="7" height="30" fill="#909090"/>
+          <rect x="298" y="110" width="7" height="30" fill="#909090"/>
+          <!-- Platform -->
+          <rect x="122" y="108" width="191" height="5" fill="#b0b0b0" rx="1"/>
+          <!-- First floor - mostly glass facing forward -->
+          <rect x="128" y="72" width="179" height="38" fill="#f0f0ec"/>
+          <!-- Floor-to-ceiling glass panels -->
+          <rect x="135" y="73" width="38" height="36" fill="url(#glass-b)" stroke="#ddd" stroke-width="0.5"/>
+          <rect x="178" y="73" width="38" height="36" fill="url(#glass-b)" stroke="#ddd" stroke-width="0.5"/>
+          <rect x="221" y="73" width="38" height="36" fill="url(#glass-b)" stroke="#ddd" stroke-width="0.5"/>
+          <rect x="264" y="73" width="38" height="36" fill="url(#glass-b)" stroke="#ddd" stroke-width="0.5"/>
+          <!-- Concrete accent wall -->
+          <rect x="128" y="72" width="8" height="38" fill="#c8c0b8"/>
+          <rect x="299" y="72" width="8" height="38" fill="#c8c0b8"/>
+          <!-- Second floor - white with clerestory -->
+          <rect x="128" y="38" width="179" height="35" fill="#eeeeea"/>
+          <!-- Clerestory windows near top -->
+          <rect x="135" y="40" width="163" height="10" fill="url(#glass-b)" stroke="#ccc" stroke-width="0.5"/>
+          <!-- Ipe deck surface on roof -->
+          <rect x="122" y="34" width="191" height="6" fill="#b07840" rx="1"/>
+          <!-- Rooftop deck surface -->
+          <rect x="122" y="28" width="191" height="6" fill="#c08848"/>
+          <!-- Cable railing posts -->
+          <line x1="130" y1="28" x2="130" y2="14" stroke="#888" stroke-width="1.5"/>
+          <line x1="165" y1="28" x2="165" y2="14" stroke="#888" stroke-width="1.5"/>
+          <line x1="200" y1="28" x2="200" y2="14" stroke="#888" stroke-width="1.5"/>
+          <line x1="235" y1="28" x2="235" y2="14" stroke="#888" stroke-width="1.5"/>
+          <line x1="270" y1="28" x2="270" y2="14" stroke="#888" stroke-width="1.5"/>
+          <line x1="305" y1="28" x2="305" y2="14" stroke="#888" stroke-width="1.5"/>
+          <!-- Cable lines -->
+          <line x1="130" y1="17" x2="305" y2="17" stroke="#888" stroke-width="0.8"/>
+          <line x1="130" y1="21" x2="305" y2="21" stroke="#888" stroke-width="0.8"/>
+          <line x1="130" y1="25" x2="305" y2="25" stroke="#888" stroke-width="0.8"/>
+          <!-- Stair to roof on right side -->
+          <rect x="312" y="28" width="18" height="6" fill="#c08848"/>
+          <rect x="318" y="34" width="12" height="6" fill="#c08848"/>
+          <rect x="318" y="40" width="12" height="6" fill="#b8a080"/>
+          <!-- Label -->
+          <text x="220" y="158" text-anchor="middle" font-size="9.5" font-family="Georgia,serif" fill="#3a3a3a" font-style="italic">Modern Cabana · flat roof deck · floor-to-ceiling glass · cable railing · ipe decking</text>
+        </svg>
+      </div>
       <div class="card-body">
         <p>Two-story on pilings with a flat roof that becomes the rooftop deck. First floor (500 sq ft): open living/kitchen with floor-to-ceiling impact glass on the pool-facing side. Second floor (500 sq ft): primary suite and bath with clerestory windows.</p>
         <ul>
@@ -537,6 +667,74 @@
         <h3>Concept C — Bahamian Conch Cottage</h3>
         <div class="tag">Highest Curb Appeal · Keys Identity · STR Potential</div>
       </div>
+      <!-- CONCEPT C ILLUSTRATION -->
+      <div class="concept-visual">
+        <svg viewBox="0 0 440 170" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky-c" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7ec8e3"/><stop offset="100%" stop-color="#c8e8f5"/>
+            </linearGradient>
+          </defs>
+          <!-- Sky -->
+          <rect width="440" height="170" fill="url(#sky-c)"/>
+          <!-- Clouds -->
+          <ellipse cx="340" cy="25" rx="28" ry="10" fill="white" opacity="0.7"/>
+          <ellipse cx="360" cy="22" rx="18" ry="8" fill="white" opacity="0.7"/>
+          <!-- Ground -->
+          <rect x="0" y="138" width="440" height="32" fill="#c4a050"/>
+          <!-- Pilings with lattice screens -->
+          <rect x="120" y="105" width="8" height="35" fill="#7a5020"/>
+          <rect x="165" y="105" width="8" height="35" fill="#7a5020"/>
+          <rect x="258" y="105" width="8" height="35" fill="#7a5020"/>
+          <rect x="303" y="105" width="8" height="35" fill="#7a5020"/>
+          <!-- Lattice screens between pilings -->
+          <rect x="128" y="108" width="37" height="28" fill="none" stroke="#c4a050" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <rect x="173" y="108" width="85" height="28" fill="none" stroke="#c4a050" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <rect x="266" y="108" width="37" height="28" fill="none" stroke="#c4a050" stroke-width="0.8" stroke-dasharray="3,2"/>
+          <!-- Platform -->
+          <rect x="114" y="104" width="203" height="5" fill="#d4c090" rx="1"/>
+          <!-- First floor - pastel yellow walls -->
+          <rect x="120" y="68" width="191" height="38" fill="#f5e8a8"/>
+          <!-- Porch railing -->
+          <line x1="114" y1="68" x2="114" y2="60" stroke="#fff" stroke-width="1.5"/>
+          <line x1="317" y1="68" x2="317" y2="60" stroke="#fff" stroke-width="1.5"/>
+          <line x1="113" y1="60" x2="318" y2="60" stroke="#fff" stroke-width="1.5"/>
+          <!-- Windows first floor with white trim -->
+          <rect x="135" y="76" width="22" height="18" fill="#c8e0f4" stroke="white" stroke-width="1.5"/>
+          <rect x="200" y="78" width="30" height="22" fill="#b07040" stroke="white" stroke-width="1.5" rx="0"/>
+          <!-- arched door top -->
+          <path d="M200,78 Q215,70 230,78" fill="#b07040" stroke="white" stroke-width="1.5"/>
+          <rect x="278" y="76" width="22" height="18" fill="#c8e0f4" stroke="white" stroke-width="1.5"/>
+          <!-- Second floor - pastel yellow -->
+          <rect x="130" y="36" width="171" height="33" fill="#f5e8a8"/>
+          <!-- Porch roof trim -->
+          <rect x="120" y="64" width="191" height="5" fill="#e8d890" rx="1"/>
+          <!-- Windows second floor -->
+          <rect x="148" y="43" width="20" height="15" fill="#c8e0f4" stroke="white" stroke-width="1.5"/>
+          <rect x="265" y="43" width="20" height="15" fill="#c8e0f4" stroke="white" stroke-width="1.5"/>
+          <!-- Dormer on roof left -->
+          <rect x="160" y="20" width="28" height="18" fill="#f5e8a8"/>
+          <polygon points="158,20 174,10 192,20" fill="#4a5068"/>
+          <rect x="165" y="23" width="14" height="10" fill="#c8e0f4" stroke="white" stroke-width="1"/>
+          <!-- Steep gable tin roof -->
+          <polygon points="118,36 220,2 322,36" fill="#5a6070"/>
+          <!-- Tin roof line details -->
+          <line x1="170" y1="36" x2="194" y2="6" stroke="#4a5060" stroke-width="0.5" opacity="0.4"/>
+          <line x1="220" y1="36" x2="220" y2="3" stroke="#4a5060" stroke-width="0.5" opacity="0.4"/>
+          <line x1="270" y1="36" x2="246" y2="6" stroke="#4a5060" stroke-width="0.5" opacity="0.4"/>
+          <!-- Widow's walk on peak -->
+          <rect x="206" y="0" width="28" height="4" fill="#f0f0ea"/>
+          <!-- Picket fence on walk -->
+          <line x1="206" y1="0" x2="206" y2="-5" stroke="white" stroke-width="1.2"/>
+          <line x1="213" y1="0" x2="213" y2="-5" stroke="white" stroke-width="1.2"/>
+          <line x1="220" y1="0" x2="220" y2="-5" stroke="white" stroke-width="1.2"/>
+          <line x1="227" y1="0" x2="227" y2="-5" stroke="white" stroke-width="1.2"/>
+          <line x1="234" y1="0" x2="234" y2="-5" stroke="white" stroke-width="1.2"/>
+          <line x1="204" y1="-5" x2="236" y2="-5" stroke="white" stroke-width="1.2"/>
+          <!-- Label -->
+          <text x="220" y="158" text-anchor="middle" font-size="9.5" font-family="Georgia,serif" fill="#5a4010" font-style="italic">Conch Cottage · steep gable · dormer · pastel siding · authentic widow's walk</text>
+        </svg>
+      </div>
       <div class="card-body">
         <p>Traditional conch style, two-story. Steep gable, dormers, picket railings, standing-seam tin roof, pastel siding. First floor (500 sq ft): living/kitchen/porch. Second floor (500 sq ft): sleeping loft and bath.</p>
         <ul>
@@ -552,6 +750,95 @@
       <div class="card-header">
         <h3>Concept D — Garage + Loft ★ Recommended</h3>
         <div class="tag">Best Value · Most Practical · Keys-Native</div>
+      </div>
+      <!-- CONCEPT D ILLUSTRATION -->
+      <div class="concept-visual">
+        <svg viewBox="0 0 440 170" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky-d" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7ec8e3"/><stop offset="100%" stop-color="#c8e8f5"/>
+            </linearGradient>
+          </defs>
+          <!-- Sky -->
+          <rect width="440" height="170" fill="url(#sky-d)"/>
+          <!-- Ground -->
+          <rect x="0" y="138" width="440" height="32" fill="#c4a050"/>
+          <!-- Structural pilings (visible through open garage level) -->
+          <rect x="118" y="90" width="8" height="50" fill="#7a5020"/>
+          <rect x="155" y="90" width="8" height="50" fill="#7a5020"/>
+          <rect x="268" y="90" width="8" height="50" fill="#7a5020"/>
+          <rect x="305" y="90" width="8" height="50" fill="#7a5020"/>
+          <!-- ── GROUND LEVEL: Open garage ── -->
+          <!-- Floor slab -->
+          <rect x="112" y="132" width="201" height="8" fill="#c0b090"/>
+          <!-- Back wall of garage (partial) -->
+          <rect x="112" y="90" width="201" height="42" fill="#e8e0d0" opacity="0.3"/>
+          <!-- Garage doors (3 bays) -->
+          <rect x="118" y="93" width="52" height="38" fill="#d0c8b8" stroke="#aaa" stroke-width="0.8" rx="1"/>
+          <rect x="178" y="93" width="52" height="38" fill="#d0c8b8" stroke="#aaa" stroke-width="0.8" rx="1"/>
+          <rect x="238" y="93" width="52" height="38" fill="#d0c8b8" stroke="#aaa" stroke-width="0.8" rx="1"/>
+          <!-- Garage door panel lines -->
+          <line x1="118" y1="102" x2="170" y2="102" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="118" y1="111" x2="170" y2="111" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="118" y1="120" x2="170" y2="120" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="178" y1="102" x2="230" y2="102" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="178" y1="111" x2="230" y2="111" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="178" y1="120" x2="230" y2="120" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="238" y1="102" x2="290" y2="102" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="238" y1="111" x2="290" y2="111" stroke="#bbb" stroke-width="0.7"/>
+          <line x1="238" y1="120" x2="290" y2="120" stroke="#bbb" stroke-width="0.7"/>
+          <!-- Garage label -->
+          <text x="220" y="87" text-anchor="middle" font-size="8" font-family="system-ui" fill="#666">GARAGE · WORKSHOP · GEAR STORAGE</text>
+          <!-- ── FIRST FLOOR: Living space ── -->
+          <rect x="118" y="55" width="196" height="36" fill="#f5f0e8"/>
+          <!-- Floor line -->
+          <rect x="112" y="88" width="204" height="4" fill="#ddd" rx="1"/>
+          <!-- Porch facing pool (front, slightly extended) -->
+          <rect x="108" y="53" width="218" height="4" fill="#ccc" rx="1"/>
+          <!-- Windows first floor -->
+          <rect x="130" y="62" width="25" height="18" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="200" y="62" width="14" height="28" fill="#b07040" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="275" y="62" width="25" height="18" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <!-- ── SECOND FLOOR: Bedrooms ── -->
+          <rect x="118" y="22" width="196" height="34" fill="#f0ece4"/>
+          <!-- Floor line -->
+          <rect x="112" y="54" width="204" height="4" fill="#ddd" rx="1"/>
+          <!-- Balcony railing -->
+          <line x1="108" y1="53" x2="108" y2="44" stroke="#888" stroke-width="1.2"/>
+          <line x1="330" y1="53" x2="330" y2="44" stroke="#888" stroke-width="1.2"/>
+          <line x1="106" y1="44" x2="332" y2="44" stroke="#888" stroke-width="1.2"/>
+          <!-- Windows second floor -->
+          <rect x="135" y="29" width="22" height="16" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="196" y="29" width="22" height="16" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <rect x="270" y="29" width="22" height="16" fill="#b8d8f0" stroke="#aaa" stroke-width="0.8"/>
+          <!-- ── ROOFTOP DECK ── -->
+          <rect x="112" y="16" width="204" height="7" fill="#c08848" rx="1"/>
+          <!-- Rooftop railing posts -->
+          <line x1="120" y1="16" x2="120" y2="6" stroke="#666" stroke-width="1.2"/>
+          <line x1="155" y1="16" x2="155" y2="6" stroke="#666" stroke-width="1.2"/>
+          <line x1="190" y1="16" x2="190" y2="6" stroke="#666" stroke-width="1.2"/>
+          <line x1="225" y1="16" x2="225" y2="6" stroke="#666" stroke-width="1.2"/>
+          <line x1="260" y1="16" x2="260" y2="6" stroke="#666" stroke-width="1.2"/>
+          <line x1="295" y1="16" x2="295" y2="6" stroke="#666" stroke-width="1.2"/>
+          <line x1="118" y1="6" x2="297" y2="6" stroke="#666" stroke-width="1.2"/>
+          <!-- External stair on right side -->
+          <rect x="332" y="16" width="14" height="6" fill="#c08848"/>
+          <rect x="338" y="22" width="14" height="6" fill="#c08848" opacity="0.85"/>
+          <rect x="338" y="28" width="14" height="6" fill="#c08848" opacity="0.75"/>
+          <rect x="338" y="34" width="14" height="6" fill="#c08848" opacity="0.65"/>
+          <rect x="338" y="40" width="14" height="6" fill="#c08848" opacity="0.55"/>
+          <!-- Stair railing -->
+          <line x1="332" y1="16" x2="352" y2="46" stroke="#888" stroke-width="1"/>
+          <!-- Flat/hip roof -->
+          <rect x="112" y="20" width="204" height="4" fill="#5a6070"/>
+          <!-- Level labels -->
+          <text x="100" y="108" text-anchor="end" font-size="7.5" font-family="system-ui" fill="#666">GND</text>
+          <text x="100" y="74" text-anchor="end" font-size="7.5" font-family="system-ui" fill="#666">FLR 1</text>
+          <text x="100" y="42" text-anchor="end" font-size="7.5" font-family="system-ui" fill="#666">FLR 2</text>
+          <text x="100" y="22" text-anchor="end" font-size="7.5" font-family="system-ui" fill="#d4603a">ROOF</text>
+          <!-- Label -->
+          <text x="210" y="158" text-anchor="middle" font-size="9.5" font-family="Georgia,serif" fill="#5a4010" font-style="italic">Garage + Loft · free ground storage · 3 levels · rooftop via exterior stair · best $/sq ft</text>
+        </svg>
       </div>
       <div class="card-body">
         <p>The mandatory piling elevation becomes productive square footage. Ground level (unconditioned): 2-car garage, workshop, fishing gear storage, outdoor shower, mechanical room. First floor (500 sq ft): open living/kitchen/dining, covered porch facing the pool. Second floor (500 sq ft): primary bedroom, bath, office nook, covered balcony.</p>
@@ -610,8 +897,8 @@
     </li>
     <li>
       <div class="step-text">
-        <strong>Verify septic capacity</strong>
-        A second dwelling unit adds ~150–200 gallons/day. If the existing system is at capacity, budget $8,000–$25,000 for an upgrade.
+        <strong>Confirm sewer service capacity for two units</strong>
+        The property is on city sewer — no septic upgrade risk. Confirm with Marathon Public Works that the existing service line and meter can handle a second dwelling unit (~150–200 gallons/day added load). This is typically a quick call and rarely an issue on municipal sewer.
       </div>
     </li>
     <li>
@@ -635,6 +922,58 @@
   </ol>
 </section>
 
+<!-- ══ VACATION RENTAL RULES ════════════════════════════════════════════════ -->
+<section>
+  <h2>Vacation Rental Rules</h2>
+  <p>This is one of the most important sections if rental income is part of the casita's purpose. The answer is nuanced: <strong>long-term rental is easy, short-term rental is tightly controlled.</strong></p>
+
+  <h3>The Two Categories — and Why They Matter</h3>
+  <table>
+    <tr><th>Type</th><th>Definition</th><th>Marathon Status</th></tr>
+    <tr><td><strong>Long-term rental</strong></td><td>31+ days per stay</td><td><span class="check">✓ Generally permitted in residential zones. Fewer restrictions, no vacation rental license required.</span></td></tr>
+    <tr><td><strong>Short-term rental (STR / vacation rental)</strong></td><td>30 days or fewer per stay</td><td><span class="warn">⚠ Requires a Marathon Vacation Rental License. Licenses are capped and regulated under Monroe County's Area of Critical State Concern rules.</span></td></tr>
+  </table>
+
+  <h3>Short-Term Rental Licensing in Marathon</h3>
+  <p>Marathon requires a separate Vacation Rental License for any rental under 28 days. This is administered through the city's Code Compliance department and is separate from the state DBPR (Florida Dept of Business and Professional Regulation) license, which is also required.</p>
+
+  <div class="callout alert">
+    <strong>The cap problem</strong>
+    Monroe County operates under Florida's Area of Critical State Concern designation, which limits growth — including the number of transient (vacation) rental units. Marathon's total inventory of vacation rental licenses is capped. New licenses may not be available, may require purchasing an existing license, or may involve a waiting list. This is NOT a quick process and cannot be assumed.
+  </div>
+
+  <h3>What This Means for the Casita</h3>
+  <ul style="padding-left:20px; margin-bottom:16px; line-height:2;">
+    <li><strong>Private use or long-term rental:</strong> No vacation rental license needed. Full flexibility. No cap issue. Simplest path.</li>
+    <li><strong>Airbnb / VRBO / nightly rental:</strong> Requires a Marathon Vacation Rental License, a Florida DBPR license, and collection of Monroe County Tourist Development Tax (TDT). License availability is uncertain — verify before counting on this income.</li>
+    <li><strong>30-day minimum rentals:</strong> A practical middle ground — monthly furnished rentals avoid the STR license requirement while still generating rental income. Marathon and the Keys have strong demand for monthly rentals from seasonal workers, contractors, and remote workers.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Recommendation</strong>
+    Don't build the business case around Airbnb income until you've confirmed a vacation rental license is available for this parcel. Call Marathon Code Compliance at (305) 743-0033 and ask: "Is a new vacation rental license available at 265 Avenue G, and what is the current process?" If STR income is important, investigate this in parallel with the BPAS inquiry.
+  </div>
+
+  <div class="url-grid" style="margin-top:16px;">
+    <div class="url-card">
+      <div class="url-label">Marathon Vacation Rental Info</div>
+      <a href="https://www.ci.marathon.fl.us/codecompliance/page/vacation-rentals" target="_blank" rel="noopener">ci.marathon.fl.us/codecompliance</a>
+    </div>
+    <div class="url-card">
+      <div class="url-label">Marathon Code Compliance</div>
+      <strong>(305) 743-0033</strong>
+    </div>
+    <div class="url-card">
+      <div class="url-label">Florida DBPR — Vacation Rental License</div>
+      <a href="https://www.myfloridalicense.com/dbpr/sto/file_download/2023_07_Vacation_Rental_Checklist.pdf" target="_blank" rel="noopener">Florida DBPR Vacation Rental</a>
+    </div>
+    <div class="url-card">
+      <div class="url-label">Monroe County Tourist Tax (TDT)</div>
+      <a href="https://monroetaxcollector.com/" target="_blank" rel="noopener">monroetaxcollector.com</a>
+    </div>
+  </div>
+</section>
+
 <!-- ══ RISKS ══════════════════════════════════════════════════════════════════ -->
 <section>
   <h2>Risks &amp; Watchouts</h2>
@@ -642,11 +981,11 @@
     <div class="risk-item"><strong>BPAS queue</strong>Marathon permit-constrained. Allocation: 6–24 months depending on current queue.</div>
     <div class="risk-item"><strong>SB-48 implementation</strong>Marathon's compliance rules may not be finalized until late 2026.</div>
     <div class="risk-item"><strong>Flood zone shift</strong>New FEMA maps may raise your BFE and add foundation cost.</div>
-    <div class="risk-item"><strong>Short-term rental</strong>Marathon caps vacation rentals. Verify if rental income is the goal.</div>
+    <div class="risk-item"><strong>Short-term rental (STR)</strong>Marathon caps vacation rental licenses and enforces a 28-day minimum in residential zones. See Vacation Rental Rules section below for full details.</div>
     <div class="risk-item"><strong>Cost inflation</strong>Keys construction has averaged 7–12%/year. Budget contingency accordingly.</div>
     <div class="risk-item"><strong>Neighbor notification</strong>ADU permits may trigger adjacent-owner notice — anticipate feedback.</div>
     <div class="risk-item"><strong>Insurance</strong>Adding a second dwelling will substantially increase wind + flood premiums.</div>
-    <div class="risk-item"><strong>Septic capacity</strong>Verify existing system can handle a second dwelling unit or budget for upgrade.</div>
+    <div class="risk-item"><strong>Sewer connection</strong>On municipal sewer — no septic risk. Confirm service line capacity can handle second unit. Low risk.</div>
   </div>
 </section>
 
