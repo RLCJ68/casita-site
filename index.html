@@ -1250,27 +1250,59 @@
 <!-- ══ 3D VISUALIZATION ═════════════════════════════════════════════════════ -->
 <section>
   <h2>3D Site Visualization — Concept D</h2>
-  <p>Concept D (Garage + Loft) composited onto the actual lot, looking south from the main house. The casita sits on pilings ~90 ft south, with open ground-level parking underneath. Green metal roof to match the main house.</p>
+  <p>Concept D (Garage + Loft) composited onto the actual property video. Camera pans south from the main house across the lot. The casita sits on pilings ~90 ft south, two stories with windows, wrap-around deck, rooftop railing, and open ground-level parking underneath. Green metal roof to match the main house.</p>
 
-  <div style="text-align:center; margin:18px 0;">
-    <video controls playsinline preload="metadata"
-           style="max-width:100%; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.15);"
+  <!-- Video — full width, prominent -->
+  <div style="margin:24px -16px; position:relative; background:#000; border-radius:12px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.25);">
+    <video id="casita-video" controls playsinline muted loop preload="auto"
+           style="width:100%; display:block; max-height:80vh; margin:0 auto; object-fit:contain; background:#000;"
            poster="casita_proof.png">
       <source src="casita_composite.mp4" type="video/mp4">
       Your browser does not support video playback.
     </video>
-    <p style="font-size:0.85rem; color:#888; margin-top:8px;">
-      Static camera — first pass visualization. Building position and scale are adjustable in the Blender project file.
-    </p>
+  </div>
+  <div style="display:flex; gap:12px; justify-content:center; margin:16px 0;">
+    <button onclick="document.getElementById('casita-video').play()"
+            style="background:var(--teal); color:white; border:none; padding:10px 24px; border-radius:6px; font-size:1rem; cursor:pointer; font-family:inherit;">
+      Play Video
+    </button>
+    <button onclick="var v=document.getElementById('casita-video'); v.paused ? v.play() : v.pause(); v.loop=!v.loop;"
+            style="background:var(--white); color:var(--teal); border:2px solid var(--teal); padding:10px 24px; border-radius:6px; font-size:1rem; cursor:pointer; font-family:inherit;">
+      Loop On/Off
+    </button>
+  </div>
+  <p style="text-align:center; font-size:0.85rem; color:var(--muted); margin-bottom:8px;">
+    Composite render — Concept D on pilings over actual lot footage. Windows, 2nd-floor deck, rooftop railings with balusters.
+    Building position and scale are adjustable in the Blender project file.
+  </p>
+
+  <!-- Still frame — side by side on desktop, stacked on mobile -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-top:20px;">
+    <div style="text-align:center;">
+      <img src="casita_proof.png" alt="Casita Concept D composite — front view"
+           style="width:100%; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.15); cursor:pointer;"
+           onclick="this.style.transform = this.style.transform === 'scale(1.5)' ? 'scale(1)' : 'scale(1.5)'; this.style.transition='transform 0.3s';">
+      <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">
+        Still frame — tap to zoom. Concept D on pilings, viewed from the main house driveway.
+      </p>
+    </div>
   </div>
 
-  <div style="text-align:center; margin:18px 0;">
-    <img src="casita_proof.png" alt="Casita Concept D composite on lot"
-         style="max-width:100%; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
-    <p style="font-size:0.85rem; color:#888; margin-top:8px;">
-      Still frame — Concept D on pilings, green metal roof, viewed from the main house driveway.
-    </p>
-  </div>
+  <script>
+  // Auto-play video when it scrolls into view
+  (function() {
+    var video = document.getElementById('casita-video');
+    if (!video) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+          video.play().catch(function(){});
+        }
+      });
+    }, { threshold: 0.5 });
+    observer.observe(video);
+  })();
+  </script>
 </section>
 
 <!-- ══ ARCHITECTURAL CONCEPTS ═══════════════════════════════════════════════ -->
