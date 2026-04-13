@@ -879,6 +879,53 @@
   <!-- Rooftop Deck Photo -->
   <h3>The View From Up There</h3>
   <p>At 28–32 ft above grade in Marathon, the rooftop deck clears the tree canopy and neighboring rooflines. Views toward Florida Bay and the Atlantic — unobstructed in all directions.</p>
+
+  <!-- ── 3D COMPOSITE VIDEO ── -->
+  <h3>3D Composite — Concept D on the Actual Lot</h3>
+  <p>Concept D composited onto real property video footage. Camera pans south from the main house across the lot. Two stories on pilings with windows, wrap-around 2nd floor deck, rooftop railings with balusters, and open ground-level parking underneath. Green metal roof to match the main house.</p>
+
+  <div style="margin:24px 0; background:#000; border-radius:12px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.25);">
+    <video id="casita-video" controls playsinline muted loop preload="auto"
+           style="width:100%; display:block; max-height:80vh; object-fit:contain; background:#000;"
+           poster="/static/casita_proof.png">
+      <source src="/static/casita_composite.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+  </div>
+  <div style="display:flex; gap:12px; justify-content:center; margin:16px 0;">
+    <button onclick="document.getElementById('casita-video').play()"
+            style="background:var(--teal); color:white; border:none; padding:10px 24px; border-radius:6px; font-size:1rem; cursor:pointer; font-family:inherit;">
+      Play Video
+    </button>
+    <button onclick="var v=document.getElementById('casita-video'); v.loop=!v.loop; this.textContent=v.loop?'Loop: ON':'Loop: OFF';"
+            style="background:var(--white); color:var(--teal); border:2px solid var(--teal); padding:10px 24px; border-radius:6px; font-size:1rem; cursor:pointer; font-family:inherit;">
+      Loop: ON
+    </button>
+  </div>
+
+  <div style="text-align:center; margin:20px 0;">
+    <img src="/static/casita_proof.png" alt="Casita Concept D composite — front view"
+         style="width:100%; max-width:500px; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
+    <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">
+      Still frame — Concept D on pilings with windows, decks, and rooftop railings. Viewed from the main house driveway looking south.
+    </p>
+  </div>
+
+  <script>
+  // Auto-play video when it scrolls into view
+  (function() {
+    var video = document.getElementById('casita-video');
+    if (!video) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+          video.play().catch(function(){});
+        }
+      });
+    }, { threshold: 0.5 });
+    observer.observe(video);
+  })();
+  </script>
 </section>
 
 <!-- ══ LEGAL FRAMEWORK ═══════════════════════════════════════════════════════ -->
@@ -1247,63 +1294,7 @@
   </script>
 </section>
 
-<!-- ══ 3D VISUALIZATION ═════════════════════════════════════════════════════ -->
-<section>
-  <h2>3D Site Visualization — Concept D</h2>
-  <p>Concept D (Garage + Loft) composited onto the actual property video. Camera pans south from the main house across the lot. The casita sits on pilings ~90 ft south, two stories with windows, wrap-around deck, rooftop railing, and open ground-level parking underneath. Green metal roof to match the main house.</p>
-
-  <!-- Video — full width, prominent -->
-  <div style="margin:24px -16px; position:relative; background:#000; border-radius:12px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.25);">
-    <video id="casita-video" controls playsinline muted loop preload="auto"
-           style="width:100%; display:block; max-height:80vh; margin:0 auto; object-fit:contain; background:#000;"
-           poster="casita_proof.png">
-      <source src="casita_composite.mp4" type="video/mp4">
-      Your browser does not support video playback.
-    </video>
-  </div>
-  <div style="display:flex; gap:12px; justify-content:center; margin:16px 0;">
-    <button onclick="document.getElementById('casita-video').play()"
-            style="background:var(--teal); color:white; border:none; padding:10px 24px; border-radius:6px; font-size:1rem; cursor:pointer; font-family:inherit;">
-      Play Video
-    </button>
-    <button onclick="var v=document.getElementById('casita-video'); v.paused ? v.play() : v.pause(); v.loop=!v.loop;"
-            style="background:var(--white); color:var(--teal); border:2px solid var(--teal); padding:10px 24px; border-radius:6px; font-size:1rem; cursor:pointer; font-family:inherit;">
-      Loop On/Off
-    </button>
-  </div>
-  <p style="text-align:center; font-size:0.85rem; color:var(--muted); margin-bottom:8px;">
-    Composite render — Concept D on pilings over actual lot footage. Windows, 2nd-floor deck, rooftop railings with balusters.
-    Building position and scale are adjustable in the Blender project file.
-  </p>
-
-  <!-- Still frame — side by side on desktop, stacked on mobile -->
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-top:20px;">
-    <div style="text-align:center;">
-      <img src="casita_proof.png" alt="Casita Concept D composite — front view"
-           style="width:100%; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.15); cursor:pointer;"
-           onclick="this.style.transform = this.style.transform === 'scale(1.5)' ? 'scale(1)' : 'scale(1.5)'; this.style.transition='transform 0.3s';">
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:8px;">
-        Still frame — tap to zoom. Concept D on pilings, viewed from the main house driveway.
-      </p>
-    </div>
-  </div>
-
-  <script>
-  // Auto-play video when it scrolls into view
-  (function() {
-    var video = document.getElementById('casita-video');
-    if (!video) return;
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-          video.play().catch(function(){});
-        }
-      });
-    }, { threshold: 0.5 });
-    observer.observe(video);
-  })();
-  </script>
-</section>
+<!-- Old 3D Visualization section removed — now in "What It Could Look Like" above -->
 
 <!-- ══ ARCHITECTURAL CONCEPTS ═══════════════════════════════════════════════ -->
 <section>
